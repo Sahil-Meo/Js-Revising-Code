@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+}
+
+.main_body {
+     background-color: gray;
+}
+
+.main_container {
+     width: 100%;
+     background-color: #F7F7F7;
+     padding: 40px 0;
+}
+
+.heading_Container {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 0 80px;
+}
+
+.subheading_box {
+     display: flex;
+     flex-direction: column;
+     align-items: end;
+     gap: 20px;
+     justify-content: space-between;
+     text-align: end;
+     width: 43%;
+}
+
+.heading {
+     font-size: 3rem;
+     line-height: 60px;
+     width: 40%;
+     color: #746E35;
+}
+
+.subheading {
+     font-size: 16px;
+     color: hsl(0, 0%, 40%);
+}
+
+.shop_button {
+     font-size: 16px;
+     padding: 11px 20px;
+     background-color: hsl(0, 0%, 50%);
+     outline: none;
+     border: none;
+     cursor: pointer;
+     color: hsl(0, 0%, 90%);
+     border-radius: 50px;
+     width: 150px;
+     transition: 0.3s ease;
+}
+
+.shop_button:hover {
+     background-color: black;
+}
+
+.showcase_Container {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     margin: 40px 0;
+}
+
+.gallery_image {
+     width: 100%;
+     height: auto;
+}
+
+.library_description {
+     width: 100%;
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     /* align-items: start; */
+     justify-content: center;
+     padding: 30px;
+     text-align: left;
+}
+
+.library_description:hover {
+     background-color: #878E96;
+     color: white;
+
+     .library_desc_description {
+          color: white;
+     }
+}
+
+.library_desc_title {
+     font-size: 1.8rem;
+     background-color: transparent;
+     margin-bottom: 15px;
+}
+
+.library_desc_description {
+     font-size: 16px;
+     color: hsl(0, 0%, 40%);
+}
+
+.shocase_box {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     /* direction: ltr; */
+}
+
+.showcase_third_box {
+     direction: rtl;
+}
+
+.showcase_fourth_box {
+     direction: rtl;
+}
+
+
+
+/* ========== Responsive ========== */
+
+@media (max-width: 1024px) {
+     .heading {
+          font-size: 2.4rem;
+          width: 100%;
+     }
+
+     .subheading_box {
+          width: 100%;
+          align-items: flex-start;
+          text-align: left;
+     }
+
+     .heading_Container {
+          padding: 0 40px;
+     }
+}
+
+@media (max-width: 992px) {
+     .showcase_Container {
+          grid-template-columns: repeat(1, 1fr);
+     }
+
+     .showcase_sec_box {
+          direction: rtl;
+     }
+
+     .showcase_third_box {
+          direction: ltr;
+     }
+
+     .showcase_sixth_box {
+          direction: rtl;
+     }
+}
+
+@media (max-width: 768px) {
+     .heading_Container {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 0 20px;
+     }
+
+     .heading {
+          font-size: 2rem;
+          line-height: 40px;
+     }
+
+     .subheading {
+          font-size: 15px;
+     }
+
+     .shop_button {
+          width: 130px;
+          padding: 10px 16px;
+     }
+
+     .library_desc_title {
+          font-size: 1.4rem;
+     }
+
+     .library_desc_description {
+          font-size: 14px;
+     }
+
+     .showcase_Container {
+          grid-template-columns: 1fr;
+     }
+
+     .shocase_box {
+          grid-template-columns: 1fr;
+     }
+
+       .library_description {
+          height: 70vh;
+     }
+}
+
+@media (max-width: 480px) {
+     .main_container {
+          padding: 20px 0;
+     }
+
+     .heading_Container {
+          gap: 20px;
+     }
+
+     .heading {
+          font-size: 1.8rem;
+          line-height: 32px;
+     }
+
+     .subheading_box {
+          gap: 15px;
+     }
+
+     .shop_button {
+          width: 100%;
+          text-align: center;
+     }
+
+     .library_description {
+          padding: 20px;
+     }
+
+     .library_desc_title {
+          font-size: 1.2rem;
+     }
+
+     .library_desc_description {
+          font-size: 13px;
+     }
+
+     .showcase_Container {
+          grid-template-columns: 1fr;
+     }
+
+     .library_description {
+          height: 50vh;
+     }
+
+     .shocase_box {
+          grid-template-columns: 1fr;
+     }
+}

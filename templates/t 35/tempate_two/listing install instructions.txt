@@ -1,0 +1,14 @@
+ok so here is the listing template as per promise
+that is compatible to software "Tagbot"
+so you will easily create your listings
+here are the instructions
+
+Step1: open the attachment file "listing.docx" and copy all the code in that
+Step2: open this website for software: http://www.isdntek.com/tagbot/webtagbot.htm
+Step3: now paste all the code which you have copied in the first section called "paste your tagbot template below"
+Step4: click on Make Slots (you will see there are fields appear after your click)
+Step5: Fill those field like type your item title, put your image links in image fields (First image link ) and then fill your description and other areas of the template according to item 
+Step6: Click on "Make Code", you will see all code will appear to next section. just copy all that code
+Step7: just paste all that code now to HTML section in description of that listing. and then click on list your item and check its description 
+
+you are done!

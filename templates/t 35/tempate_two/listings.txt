@@ -1,0 +1,159 @@
+<html>
+<head>
+<title>eBay</title>
+	</head>
+	<body marginwidth="0" marginheight="0"><table align="center" style="border-spacing: 0px; width: 100%;">
+	<tbody>
+	<tr>
+		<td>
+			<div id="ds_div">
+							<font rwr="1" size="4" style="font-family:Arial"><font rwr="1" size="4" style="font-family:Arial"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta https-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="eBay Store Design, Mobile Responsive">
+<meta name="keywords" content="eBay Store Design, Mobile Responsive, Mobile Optimized, Custom Listing Template, Mobile Responsive Listing, Auction Listing Template, 2017 Approved, Active Content Compliant">
+<title> Template</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+<link href="https://e-commerceguru.com/clients/house_of_focus/css/styleo.css" rel="stylesheet">
+<div class="main-bg">
+<div class="container">
+<div class="header">
+<div class="logo">
+<div class="mTitle"></div> <!-- Enter Website TITLE Here -->
+</div>
+</div>
+<div class="pst-clear"></div>
+<div class="container">
+<div class="row">
+<div class="col-md-4 col-sm-4 col-xs-12">
+<div class="pst-logo"><a href="" title=""><img style="margin-top: -5px;" src="https://e-commerceguru.com/clients/house_of_focus/images/logo.png" alt="" class="img-responsive"></a></div>
+</div>
+</div>
+</div>
+<div class="pst-banner">
+<!-- slider -->
+<div class="main clearfix"> 
+  <div class="zdz-col-main"> 
+   <div class="slider main-slider scroll list-4 col-1 zdzWrap"> 
+    
+<div class="w3-content w3-section" style="max-width:1180px;margin-top:10px;">
+ <a href="#"> <img class="mySlides" src="https://e-commerceguru.com/clients/house_of_focus/images/banner.png" style="width: 100%; display: none;"></a>
+  <a href="#"> <img class="mySlides" src="https://e-commerceguru.com/clients/house_of_focus/images/banner4.png" style="width: 100%; display: none;"></a>
+
+</div>
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+</script>
+ 
+   </div>
+   
+</div></div>
+<!-- /slider -->
+</div>
+<div class="content">
+<h1 class="item-title">[TagBot- ][TagBot Title =]</h1><!-- Item Title -->
+<div class="field">
+<div class="pic_gallery">
+<div class="pic_gal pic_gal_5x1">
+<div class="pic_gal_cells">
+<div class="pic_lg pic_main">
+<div>
+<img src="[TagBot?photo1?Photo no.1 =https://][TagBot?photo1]">
+</div>
+</div>
+<span class="pic_set"><div class="pic_sm">
+<div>
+<img src="[TagBot?photo2?Photo no.2 =https://][TagBot?photo2]">
+</div>
+</div>
+<div class="pic_lg">
+<div>
+<img src="[TagBot?photo2?Photo no.2 =https://][TagBot?photo2]">
+</div>
+</div> </span> <span class="pic_set"> <div class="pic_sm">
+<div>
+<img src="[TagBot?photo3?Photo no.3 =https://][TagBot?photo3]">
+</div>
+</div>
+<div class="pic_lg"><div>
+<img src="[TagBot?photo3?Photo no.3 =https://][TagBot?photo3]">
+</div>
+</div> </span> <span class="pic_set"> <div class="pic_sm">
+<div>&nbsp; <img src="[TagBot?photo4?Photo no.4 =https://][TagBot?photo4]">
+</div>
+</div>
+<div class="pic_lg">
+<div>
+<img src="[TagBot?photo4?Photo no.4 =https://][TagBot?photo4]">
+</div>
+</div> </span> <span class="pic_set"> <div class="pic_sm">
+<div>
+<img src="[TagBot?photo5?Photo no.5 =https://][TagBot?photo5]">
+</div>
+</div>
+<div class="pic_lg">
+<div>
+<img src="[TagBot?photo5?Photo no.5 =https://][TagBot?photo5]">
+</div>
+</div> </span> <span class="pic_set"><div class="pic_sm">
+<div>
+<img src="[TagBot?photo6?Photo no.6 =https://][TagBot?photo6]">
+</div>
+</div>
+<div class="pic_lg"><div>&nbsp; <img src="[TagBot?photo6?Photo no.6 =https://][TagBot?photo6]">
+</div>
+</div> </span>
+</div>
+</div>
+</div>
+</div>
+<h2 class="small">Item Description</h2>
+<div class="field"><!--Decription Body-->&nbsp;
+<p style="font-family: Arial;"><font size="3">  [TagBot- ][TagBot Description =]<br><br></font></p>
+</div>
+<!-- <h2 class="small">Features/Specs</h2>
+<div class="field"><-Features Body-->&nbsp;
+<!-- <p style="font-family: Arial;"><font size="3">  </font></p> -->
+<!-- <ul> <li>[TagBot- ][TagBot Features1 =]</li> -->
+<!-- <li>[TagBot- ][TagBot Features2 =]</li>
+ --><!-- <li>[TagBot- ][TagBot Features3 =]</li></ul> -->
+<!-- </div> -->
+<h2 class="small">About</h2><div class="field"><p>We are dedicated to sell you the best supplements money can buy from the UK. Settle for nothing less, our entire range has been tried & tested. Don't settle for less, try our products and see for yourself.</p>
+</div>
+<h2 class="small">Shipping Information</h2>
+<div class="field">
+<!-- Add Text -->
+<p>Sent with Royal Mail 1st Class Recorded posted same day before 1PM
+</div>
+<h2 class="small">Payment</h2>
+<div class="field">
+<!-- Add Text -->
+<p>We accept PayPal verified for secure payment<br><br>
+
+<img class="promo-img" src="http://e-commerceguru.com/tariq/techtemplate/images/paypal_logo.png">
+</p>
+</div>
+
+
+</div>
+
+</div>
+</div></font></font></div>
+						</td>
+	</tr>
+</tbody></table><span id="closeHtml"></span>
+</body></html>

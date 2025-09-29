@@ -1,0 +1,38 @@
+@import url(https://fonts.googleapis.com/css?family=Squada+One);
+.bg {background-image:url(https://dl.dropboxusercontent.com/s/hfmsmmtd772gr61/bg.jpg); background-position:top center; background-repeat:no-repeat; background-color:#020911; padding:50px 20px}
+.content {max-width:800px}
+.logo {font-family: 'Squada One', cursive; font-size:60px; color:#fff; text-shadow:1px 1px 1px #020816; line-height:44px; text-align: center; margin:0 0 30px 0; padding:0}
+.logo span {font-family:Verdana; font-size:12px}
+.box {font-family:Verdana; font-size:14px; margin:0 0 30px 0; padding:20px; background:#fff; box-shadow:1px 1px 5px #020816; text-align: left; -webkit-border-bottom-right-radius: 15px; -webkit-border-bottom-left-radius: 15px; -moz-border-radius-bottomright: 15px; -moz-border-radius-bottomleft: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 15px;}
+ .titel {font-family: 'Squada One', cursive;
+  font-size:30px;
+  color:#fff;
+  text-shadow:1px 1px 1px #020816;
+  padding:10px 20px; 
+  margin:0; 
+ text-align: left;
+  -webkit-border-top-left-radius: 15px; 
+  -webkit-border-top-right-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-topright: 15px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background: rgb(11,25,55);
+  background: -moz-linear-gradient(top, rgba(11,25,55,1) 0%, rgba(14,40,78,1) 50%, rgba(11,35,73,1) 51%, rgba(19,57,109,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(11,25,55,1) 0%,rgba(14,40,78,1) 50%,rgba(11,35,73,1) 51%,rgba(19,57,109,1) 100%); background: linear-gradient(to bottom, rgba(11,25,55,1) 0%,rgba(14,40,78,1) 50%,rgba(11,35,73,1) 51%,rgba(19,57,109,1) 100%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0b1937', endColorstr='#13396d',GradientType=0 );
+}
+ .titel i {font-size:27px; margin-right:10px; color:#b2cfff}
+ .tifix {text-align:center}
+ .box ul {margin:0; padding:10px 20px}
+ .box ul li {list-style-type:none; margin:0; padding:0}
+ .box ul li:before {font-family: 'FontAwesome'; content: '\f105'; padding-right:10px; color:rgb(51, 95, 165);}
+ .box table {width:100%; margin:20px 0; border:1px solid #fff; border-collapse: collapse;}
+ .box table, th, td {border:3px solid #fff;}
+ .box table th {background:#1d2a40; padding:5px 10px; font-size:14px; font-weight:700; color:#fff}
+ .box table td {background:#c9d0d8; padding:5px 10px; font-size:14px; font-weight:400; color:#303748}
+ .box .info {width:100%; text-align:left; margin:10px 0; padding:0}
+ .box .info img {margin:5px}
+ .box h1 {font-family: 'Squada One', cursive; font-size:20px; color:rgb(40, 77, 128); margin:10px 0 0 0; padding:0;}
+ .picfix {text-align:center}
+ .picfix img {max-width:100%;height:auto}

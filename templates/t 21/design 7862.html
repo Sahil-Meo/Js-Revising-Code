@@ -1,0 +1,915 @@
+<style type="text/css">body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  }
+  .pagewidth {
+    max-width:1200px;
+    margin:0 auto;
+  }
+  *:focus {
+    outline: 0;
+  }
+  .clearer::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .block {
+    display:block !important;
+  }
+  .inline {
+    display:inline !important;
+  }
+  .inline-block {
+    display:inline-block !important;
+  }
+  .hide-mobile {
+    display:block;
+  }
+  a {
+    color:#666;
+  }
+  a:link {
+    color:#666;
+  }
+  a:visited {
+    color:#666;
+  }
+  hr {
+    color:#ccc;
+    height:1px;
+    background:#ccc;
+    border:none;
+  }
+  h1 {
+    position:relative;
+    border-bottom: 1px solid #777;
+    color: #666;
+    font-weight: 300;
+    margin: 0.3em 0 1em;
+    padding: 10px;
+    text-transform: uppercase;
+    border-top:1px solid #777;
+  }
+  h2 {
+    border-bottom: 1px solid #bbb;
+    color: #666;
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px 0;
+    margin:2em 0 1em;
+  }
+  h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  @media screen and (max-width : 760px){
+    h2 {
+      text-align:center;
+      border-top:1px solid #bbb;
+      padding: 10px 0 !important;
+      margin:2em 0 1em !important;
+    }
+    h1 {
+      text-align:center;
+    }
+    h1::before {
+      display:none;
+    }
+    .tabs {
+      margin-bottom:0 !important;
+    }
+  }
+  #show-mobile {
+    display:none;
+  }
+  #cross-selling {
+    display:block;
+    width:100%;
+    margin-top:2em;
+  }
+  #cross-selling > div#boxwrapper {
+    display:block !important;
+    width:100%;
+  }
+  .crossitem {
+    background: #fff none repeat scroll 0 0;
+    min-height: 420px;
+    padding: 10px 10px 25px;
+    text-align: center;
+    transition: all 0.3s ease-in-out 0s;
+    border: 1px solid #ccc;
+  }
+  .crossitem:hover {
+    transform: scale(1.03) rotate(1.5deg);
+    box-shadow: 0px 0px 7px #aaa;
+    border-color: #aaa;
+  }
+  .crossitem a {
+    display:block;
+    text-decoration:none;
+    outline:none;
+  }
+  .crossitem a:visited {
+    color:#666;
+  }
+  .artikelname {
+    font-weight: normal;
+    font-size: 16px;
+    padding:1em 0;
+    color:#666;
+  }
+  .preis {
+    font-weight: normal;
+    font-size: 35px;
+    color:#444;
+  }
+  #variation {
+    border-top: 1px solid #bbb;
+    font-family: sans-serif;
+    margin: 15px 0 0;
+    max-width: 100%;
+    padding:15px 0;
+  }
+  .variation {
+    list-style: outside none none;
+  }
+  .variation li {
+    background-color: #fff !important;
+    border: 1px dashed #bbb !important;
+    color: #555 !important;
+    display: inline-block !important;
+    font-size: 14px !important;
+    padding: 10px 17px !important;
+    margin: 5px 7px 5px 0 !important;
+  }
+  .variation li::before{
+    content:none !important;
+  }
+  @media only screen and (min-width: 1024px) {
+    #cross-selling .boxcontainer {
+      width:24%;
+      margin:0 0.5%;
+      float:left;
+      display:inline-block;
+    }
+    #cross-selling > div#boxwrapper {
+      display:block !important;
+      width:100%;
+      min-height:300px;
+    }
+  }
+  #maincontainer {
+    display:block;
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+    font: 14px "Open Sans", sans-serif;
+    color:#777;
+    overflow-x:hidden;
+  }
+  #maincontainer ul, #maincontainer ul li {
+    padding:0;
+    margin:0;
+    list-style-position: inside;
+  }
+  #headerlogo {
+    width:25%;
+    height:80px;
+    float:left;
+    display:inline-block;
+    text-align:left;
+  }
+  #headertexte {
+    color:#666;
+    margin:0 auto;
+    display:inline-block;
+  }
+  #headerlogo img {
+    max-width:100%;
+    max-height:80px;
+  }
+  #headerlogo a {
+    display:block;
+    height:80px;
+    text-decoration:none;
+    font-size:0px;
+    position:relative;
+  }
+  #headerlogo a::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    display: block;
+  }
+  #headerinfo {
+    width:24%;
+    float:right;
+    display:inline-block;
+    padding-top:27px;
+  }
+  #headerinfo-1 {
+    width:100%;
+    float:left;
+    display:inline-block;
+  }
+  #headerinfo-2 {
+    width:100%;
+    float:left;
+    display:inline-block;
+  }
+  #topicon {
+    color: #777;
+    font-size: 32px;
+    display:inline-block;
+    margin:0 auto;
+    text-align:center;
+    margin-right:10px;
+  }
+  span.headertext-1 {
+    display:block;
+    color:#777;
+    font-size:14px;
+  }
+  span.headertext-2 {
+    display:block;
+    color:#777;
+    font-size:10px;
+  }
+  #boxwrapper {
+    width:22.5%;
+    display:inline-block;
+    float:left;
+    padding-right:2.5%;
+  }
+  #bottomcontent {
+    width:100%;
+    display:inline-block;
+    float:left;
+  }
+  #leftcontent {
+    width:52%;
+    display:inline-block;
+    float:left;
+    padding-right:3%;
+  }
+  #rightcontent {
+    width:45%;
+    display:inline-block;
+    float:left;
+  }
+  #topheader {
+    width:100%;
+    display:inline-block;
+    float:left;
+  }
+  #topcontent {
+    width:100%;
+    display:inline-block;
+    float:left;
+    margin-bottom:2.5em;
+  }
+  #topnavi {
+    width:100%;
+    display:inline-block;
+    float:left;
+    clear:both;
+  }
+  div.boxcontainer {
+    margin-bottom:20px;
+  }
+  div.boxcontainer::after {
+    content: "";
+    display: table;
+    width:100%;
+    height: 15px;
+  }
+  .boxtitle {
+    background: #fff none repeat scroll 0 0;
+    border-bottom: 1px solid #ccc;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 0 10px;
+    position: relative;
+    text-transform: uppercase;
+  }
+  .boxtitle::before {
+    border-bottom: 1px solid #666;
+    bottom: -1px;
+    content: "";
+    position: absolute;
+    width: 30%;
+  }
+  .boxcontent {
+    display:block;
+    padding:20px 0;
+    font-size:13px;
+    background:#fff;
+  }
+  .boxcontent img {
+    display:inline-block;
+    margin:0 auto;
+    max-width:100%;
+  }
+  .versand ul li::before {
+    content: "\f0d1" !important;
+    display: table;
+    clear: both;
+    font-family: FontAwesome;
+    display: inline;
+    color: #666;
+    position: relative;
+    margin-right:5px;
+  }
+  div.footer {
+    background:#393939;
+    padding:20px 0 0;
+    margin:20px 0 0 0;
+    font-size:11px;
+    color:#fff;
+    text-align:center;
+    border-radius:3px;
+  }
+  #bottomcontent ul, div.boxcontainer ul{
+    margin:10px 0;
+    padding:0;
+  }
+  #bottomcontent ul li, div.boxcontainer ul li, #rightcontent ul li, #tabinhalt ul li  {
+    margin:0;
+    padding:5px 0;
+    border-top:1px solid #eee;
+    list-style:none;
+  }
+  #bottomcontent ul li:last-child, div.boxcontainer ul li:last-child, #rightcontent ul li:last-child , #tabinhalt ul li:last-child {
+    border-bottom:1px solid #eee;
+  }
+  #bottomcontent ul li::before, div.boxcontainer ul li::before, #rightcontent ul li::before {
+    content: "\f14a";
+    display: table;
+    clear: both;
+    font-family: FontAwesome;
+    display: inline;
+    color: #666;
+    position: relative;
+    margin-right:5px;
+  }
+  #tabinhalt ul li::before {
+    content: "\f138";
+    display: table;
+    clear: both;
+    font-family: FontAwesome;
+    display: inline;
+    color: #666;
+    position: relative;
+    margin-right:5px;
+  }
+  div.boxcontainer ul li {
+    padding:5px 0 !important;
+  }
+  @media only screen and (max-width : 1024px) {
+    .hide-mobile {
+      display:none !important;
+    }
+    #maincontainer {
+      width:95%;
+    }
+    #headerlogo {
+      width:30%;
+      display:inline-block;
+      float:left;
+      text-align:left;
+    }
+    #headerlogo a {
+      text-align:center;
+    }
+    #headerinfo {
+      width:30%;
+      display:block;
+      padding:20px 0 0px 20px;
+      display:block;
+      margin:0 auto;
+    }
+    #headerinfo-1 {
+      width:100%;
+      display:inline-block;
+      float:left;
+    }
+    #headerinfo-2 {
+      width:100%;
+      display:inline-block;
+      float:left;
+    }
+    #maincontent > div#boxwrapper {
+      display:none;
+    }
+    #maincontent > div#bottomcontent {
+      width:100%;
+    }
+    #show-mobile {
+      display:block;
+      width:100%;
+    }
+    #show-mobile > div#boxwrapper {
+      display:block !important;
+      width:100%;
+    }
+    #cross-selling{
+      display:block;
+      width:100%;
+      margin-top:2em;
+    }
+    #cross-selling > div#boxwrapper {
+      display:block !important;
+      width:100%;
+    }
+    div.boxcontainer {
+      width:48%;
+      margin:0 0.5%;
+      float:left;
+      display:inline-block;
+    }
+  }
+  @media only screen and (max-width : 700px) {
+    div.boxcontainer {
+      width:100%;
+      margin:0;
+      display:inline-block;
+    }
+    .crossitem:hover {
+      cursor: pointer;
+      transform: none !important;
+      box-shadow: none !important;
+      opacity: 1;
+      border-color: #aaa;
+    }
+  }
+  @media only screen and (max-width : 780px) {
+    #header {
+      text-align:center;
+    }
+    #headerlogo {
+      width:100%;
+      display:block;
+      text-align:left;
+    }
+    #headerinfo {
+      width:50%;
+      display:block;
+      padding:15px 0 10px;
+      display:block;
+      margin:0 auto;
+    }
+    #headerinfo-1 {
+      width:100%;
+      display:block;
+      float:left;
+    }
+    #headerinfo-2 {
+      width:100%;
+      display:block;
+      float:left;
+    }
+    #headerinfo-1::before, #headerinfo-2::before {
+      display:block;
+      padding-right: 190px;
+    }
+  }
+  @media only screen and (max-width : 639px) {
+    #leftcontent, #rightcontent {
+      width:100%;
+    }
+  }
+  @media only screen and (max-width : 499px) {
+    #headerlogo {
+      width:100%;
+      display:block;
+      text-align:left;
+    }
+    #headerinfo {
+      width:100%;
+      display:block;
+      padding:15px 0 10px;
+      display:block;
+      margin:0 auto;
+    }
+    #headerinfo-1 {
+      width:100%;
+      display:block;
+      float:left;
+    }
+    #headerinfo-2 {
+      width:100%;
+      display:block;
+      float:left;
+    }
+    #maincontent > div#boxwrapper {
+      display:none !important;
+    }
+    #maincontent > div#bottomcontent {
+      width:100% !important;
+    }
+    #show-mobile {
+      display:block;
+    }
+    #cross-selling {
+      display:block;
+    }
+    #leftcontent, #rightcontent {
+      width:100%;
+    }
+    .slider {
+      display:none;
+    }
+  }
+  /*Ab hier NEU*/
+  #header {
+    margin-top:20px;
+  }
+  /*Tabs*/
+  .tabs {
+    max-width: 100%;
+    float: none;
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 2em;
+  }
+  .tabs::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  #tab-content2, #tab-content3 {
+    display: none;
+  }
+  .tabs input[type="radio"] {
+    display:none;
+  }
+  .tabs label {
+    display: block;
+    float: left;
+    width: 33.3333%;
+    color: #ccc;
+    font-size: 23px;
+    font-weight: 100;
+    text-decoration: none;
+    text-align: center;
+    line-height: 2;
+    cursor: pointer;
+    box-shadow: inset 0 1px #ccc;
+    border-bottom: 1px solid #ccc;
+    -webkit-transition: all 0.5s;
+    /* Safari 3.1 to 6.0 */
+    transition: all 0.5s;
+    letter-spacing:0.05em;
+  }
+  .tabs label span {
+    display: none;
+  }
+  .tabs label i {
+    padding: 5px;
+    margin-right: 0;
+  }
+  .tabs label:hover {
+    color: #666;
+    box-shadow: inset 0 1px #666;
+    border-bottom: 1px solid #666;
+  }
+  .tabcontent {
+    width: 100%;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color:transparent;
+  }
+  #tab1:checked + label, #tab2:checked + label, #tab3:checked + label {
+    background: transperent;
+    box-shadow: inset 0 1px #666;
+    border-bottom: 1px solid #666;
+    color: #666;
+  }
+  #tab1:checked ~ #tab-content1 {
+    display: block;
+  }
+  #tab1:checked ~ #tab-content2, #tab1:checked ~ #tab-content3 {
+    display: none;
+  }
+  #tab2:checked ~ #tab-content2 {
+    display: block;
+  }
+  #tab2:checked ~ #tab-content1, #tab2:checked ~ #tab-content3 {
+    display: none;
+  }
+  #tab3:checked ~ #tab-content3 {
+    display: block;
+  }
+  #tab3:checked ~ #tab-content1, #tab3:checked ~ #tab-content2 {
+    display: none;
+  }
+  .animiert {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  @keyframes scale {
+    0% {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.01);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  .scale {
+    animation-name: scale;
+  }
+  @media (min-width: 768px) {
+    .tabs i {
+      padding: 5px;
+      margin-right: 10px;
+    }
+    .tabs label span {
+      display: inline-block;
+    }
+    .tabs {
+      max-width: 100%;
+      margin: 0 auto 1em;
+    }
+  }
+  /*Start Gallery*/
+  .gallery{
+    width: 100%;
+    /*Same as width of the large image*/
+    position: relative;
+    height:auto;
+    padding-top: 75%;
+    /*That helps bring the labels down*/
+    margin-top:5px;
+  }
+  /*Last thing remaining is to add transitions*/
+  .gallery>img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    transition: all 0.5s;
+    height:auto;
+    max-width:100%;
+    max-height:100%;
+    margin:auto;
+  }
+  .gallery input[name='gallery_switch'] {
+    display: none;
+    visibility:hidden;
+  }
+  .gallery label {
+    /*Lets add some spacing for the thumbnails*/
+    margin: 18px 0 10px 15px;
+    border: 3px solid #999;
+    float: left;
+    cursor: pointer;
+    transition: all 0.5s;
+    /*Default style = low opacity*/
+    opacity: 0.6;
+  }
+  .gallery label img{
+    display: block;
+    height:75px;
+    width:auto;
+  }
+  /*Time to add the click effects*/
+  .gallery input[name='gallery_switch']:checked+label {
+    border-color: #666;
+    opacity: 1;
+    visibility:visible;
+  }
+  /*Clicking any thumbnail now should change its opacity(style)*/
+  /*Time to work on the main images*/
+  .gallery input[name='gallery_switch'] ~ img {
+    opacity: 0;
+    transform: scale(1.1);
+    visibility:hidden;
+  }
+  /*That hides all main images at a 110% size
+  On click the images will be displayed at normal size to complete the effect
+  */
+  .gallery input[name='gallery_switch']:checked+label+img {
+    opacity: 1;
+    transform: scale(1);
+    visibility:visible;
+  }
+</style>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<div id="maincontainer">
+  <div class="clearer" id="header"><!-- Logo -->
+    <div id="headerlogo"><a href="https://stores.ebay.de/foliaprotect/" target="_blank"><img src="https://shop.strato.de/WebRoot/Store20/Shops/61713999/MediaGallery/Ebay_ab_2017/foliapro_LOGO_Ebay_2017_Kopie.png" style="width: 320px; height: 94px;"></a>
+    </div>
+    <!-- Info Oben 1 -->
+    <div class="clearer" id="headerinfo">
+      <div id="headerinfo-1">
+        <div id="topicon"><i class="fa fa-star-o"></i>
+        </div>
+        <div id="headertexte"><span class="headertext-1">ZUFRIEDENHEITSGARANTIE</span> <span class="headertext-2">UNSER SERVICE VERSPRECHEN</span>
+        </div>
+      </div>
+    </div>
+    <!-- Info Oben 1 -->
+    <div class="clearer" id="headerinfo">
+      <div id="headerinfo-2">
+        <div id="topicon"><i class="fa fa-envelope-o"></i>
+        </div>
+        <div id="headertexte"><span class="headertext-1">KUNDENSUPPORT</span> <span class="headertext-2">MO - FR: 10.00 bis 16.00 Uhr</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Hier beginnt der Slider -->
+  <div class="clearer" id="maincontent">
+    <div id="topcontent"><!-- Artikelbezeichnung -->
+      <h1>Individuelle Lackschutz- und Designfolien
+      </h1>
+      <!-- # Beginn Bildergallerie -->
+      <div id="leftcontent">
+        <div class="gallery">
+          <input checked="checked" id="id1" name="gallery_switch" type="radio"><label for="id1"><img src="https://shop.strato.de/WebRoot/Store20/Shops/61713999/MediaGallery/a_GALERIE.jpg"></label><img alt="" src="https://shop.strato.de/WebRoot/Store20/Shops/61713999/MediaGallery/a_GALERIE.jpg"> 
+          <input id="id2" name="gallery_switch" type="radio"><label for="id2"><img src="https://shop.strato.de/WebRoot/Store20/Shops/61713999/MediaGallery/NUR_Bild_5_Kopie.jpg"></label><img alt="" src="https://shop.strato.de/WebRoot/Store20/Shops/61713999/MediaGallery/NUR_Bild_5_Kopie.jpg"> 
+          <input id="id3" name="gallery_switch" type="radio"><label for="id3"><img src="https://shop.strato.de/WebRoot/Store20/Shops/61713999/MediaGallery/NUR_Bild_foliapro.jpg"></label><img alt="" src="https://shop.strato.de/WebRoot/Store20/Shops/61713999/MediaGallery/NUR_Bild_foliapro.jpg"> 
+          <input id="id4" name="gallery_switch" type="radio"><label for="id4"><img src="https://shop.strato.de/WebRoot/Store20/Shops/61713999/MediaGallery/NUR_Bild_gesamt_NEU_2017_Kopie.jpg"></label><img alt="" src="https://shop.strato.de/WebRoot/Store20/Shops/61713999/MediaGallery/NUR_Bild_gesamt_NEU_2017_Kopie.jpg"> 
+          <input id="id5" name="gallery_switch" type="radio"><label for="id5"><img src="https://shop.strato.de/WebRoot/Store20/Shops/61713999/MediaGallery/LackschutzAngebot1_copy.jpg"></label><img alt="" src="https://shop.strato.de/WebRoot/Store20/Shops/61713999/MediaGallery/LackschutzAngebot1_copy.jpg"> 
+          <input id="id5" name="gallery_switch" type="radio"><label for="id5"><img src="https://shop.strato.de/WebRoot/Store20/Shops/61713999/MediaGallery/LackschutzAngebotneu2018_copy.jpg"></label><img alt="" src="https://shop.strato.de/WebRoot/Store20/Shops/61713999/MediaGallery/LackschutzAngebotneu2018_copy.jpg">
+        </div>
+      </div>
+      <div id="rightcontent">
+        <h2 style="margin-top: 0px; margin-bottom:10px; padding-top: 0;"><strong>Produktbeschreibung</strong>
+        </h2>
+        <!-- # Überschrift der Kurzbeschriebung --><!-- # Beginn Kurzbeschreibung -->
+        <div typeof="Product" vocab=" https://schema.org/ "><span property="description">
+          <br>
+          Sie kaufen hier eine Lackschutzfolie für die Ladekante.
+          <br>
+          Der Ladekantenschutz ist passgenau zugeschnitten für folgendes Fahrzeug:</span>
+          <div typeof="Product" vocab=" https://schema.org/ "><span style="color:#696969;"><span style="font-size:18px;"><span property="description"></span></span></span>
+            <br>
+            <span style="color:#696969;"><span style="font-size:18px;"><span property="description"><span style="color:#696969;"><span style="font-size:18px;"><span property="description"><strong>VW GOLF 7 Variant (Typ AU)</strong></span></span></span>
+              <br>
+              <strong>ab Baujahr 2013</strong></span></span></span><span style="color:#696969;"><span style="font-size:16px;"><span property="description"></span></span></span>
+          </div>
+          <br>
+          <!-- # Ende Kurzbeschreibung -->
+          <ul>
+            <li>150µm für optimalen Lackschutz</li>
+            <li>hochtransparent + glänzend</li>
+            <li>blasenfreies Verkleben mit Wasser</li>
+            <li>hohe Klebkraft</li>
+            <li>waschanlagenfest</li>
+            <li>UV-beständig</li>
+            <li>leicht dehnbar</li>
+            <li>rückstandfreies Entfernen</li>
+          </ul>
+          <br>
+          Eine preiswerte Art sein Fahrzeug vor Kratzern zu bewahren.
+          <br>
+          Einfaches Aufbringen und jahrelanger Schutz. Ideal auch für Leasingfahrzeuge.
+          <div id="variation">
+            <br>
+            <br>
+            <strong>Diese Folie ist in verschiedenen Versionen in unserem Shop erhältlich.</strong>
+          </div>
+          <br>
+          <!-- # Ende Variationen --></div>
+      </div>
+      <!-- # Beginn Tabs -->
+      <div id="topcontent">
+        <div class="tabs"><input checked="checked" id="tab1" name="tabs" type="radio"> <label for="tab1"><i class="fa fa-align-left"></i><span>Beschreibung</span></label><!-- # Tab Überschrift 1 --> <input id="tab2" name="tabs" type="radio"> <label for="tab2"><i class="fa fa-cart-arrow-down"></i>Kaufabwicklung</label><!-- # Tab Überschrift 2 --> <input id="tab3" name="tabs" type="radio"> <label for="tab3"><i class="fa fa-comments"></i>Kommunikation</label><!-- # Tab Überschrift 3 --> <!-- # Tab Inhalt -->
+          <div id="tab-content1">
+            <div class="animiert scale">
+              <div class="tabcontent"><!-- # Tab Inhalt 1 -->
+                <div id="tabinhalt">
+                  <h3>Details
+                  </h3>
+                  Die Folie ist für das oben genannte Fahrzeug individuell zugeschnitten, die Illustrationen und Bilder können daher abweichen !
+                  <br>
+                  Alle unsere Folien reichen etwas um die Ladekante herum nach unten um einen maximalen Schutz auch für diesen oft stark
+                  <br>
+                  beanspruchten Bereich zu erreichen.
+                  <br>
+                  <br>
+                  Diese Folie muss mit Wasser verklebt werden (eine detaillierte Anleitung liegt der Sendung bei).
+                  <br>
+                  Durch vorsichtiges Erwärmen lässt die Folie sich später leicht wieder entfernen.
+                  <br>
+                  <br>
+                  <strong>Lieferumfang</strong>
+                  <ul>
+                    <li>die oben gewählte Schutzfolie</li>
+                    <li>einen Lieferschein mit Verklebeanleitung</li>
+                    <li>ein Papp-Rakel zum vereinfachten anbringen</li>
+                    <li>die dazugehörige Rechnung per E-Mail</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab-content2">
+            <div class="animiert scale">
+              <div class="tabcontent"><!-- # Tab Inhalt 2 -->
+                <div id="tabinhalt">
+                  <h3>ABLAUF DES KAUFES
+                  </h3>
+                  Wenn Sie diesen Artikel kaufen möchten klicken Sie auf den "Sofort-Kauf" -Button. Sie werden danach zur Ebay-Kaufabwicklung weitergeleitet. Wählen Sie dann eine Zahlart (Paypal oder Überweisung). Bitte beachten Sie daß der Bestellablauf automatisiert ist und wir nur Ihre in der Kaufabwicklung hinterlegte Adresse verwenden können. Sobald Ihre Zahlung bei uns eingegangen ist wird Ihre Bestellung innerhalb von 1 Werktag an Sie verschickt.
+                  <br>
+                  <br>
+                  Ebay-Plus Artikel werden noch am gleichen Tag versendet sofern die Zahlung bis 14.00 Uhr bei uns eintrifft. Jeder Schritt der Bestellung wird Ihnen per E-Mail von Ebay bestätigt.
+                  <br>
+                  <br>
+                  Falls Sie den Artikel per Überweisung zahlen möchten, benötigen wir folgende Angaben im Verwendungszweck: Artikelnummer und Mitgliedsname
+                  <ul>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="tab-content3">
+            <div class="animiert scale">
+              <div class="tabcontent"><!-- # Tab Inhalt 1 -->
+                <div id="tabinhalt">
+                  <h3>VOR UND NACH DEM KAUF
+                  </h3>
+                  Sollten Sie Fragen oder Anregungen haben sind wir Ihnen gern behilflich. Um Ihre Fragen möglichst genau beantworten zu können nehmen Sie bitte bevorzugt über die Ebay-Nachrichten Kontakt mit uns auf. Sollten Sie einmal nicht mit dem Artikel zufrieden sein senden Sie uns bitte bevor Sie bewerten eine E-Mail, sicher können wir das Problem lösen. Wir sind bemüht alle Erwartungen zu erfüllen um bestmögliche Bewertungen zu erhalten.
+                  <br>
+                  <br>
+                  Unser Bewertungssystem ist so eingestellt daß Sie eine automatische Bewertung erhalten sobald Sie eine positive für uns abgegeben haben. Dies unterbindet somit eine automatische Bewertung unsererseits wenn Sie keine erhalten möchten.
+                  <ul>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- # Beginn Linke Boxen -->
+      <div id="bottomcontent">
+        <div class="clearer" id="cross-selling">
+          <div class="hide-mobile" id="boxwrapper">
+            <div class="boxcontainer"><span class="boxtitle">wir bieten</span><!-- # Boxüberschrift 1 -->
+              <div class="boxcontent"><!-- # Boxinhalt 1 -->
+                <ul>
+                  <li>schneller Versand</li>
+                  <li>preiswerte Produkte</li>
+                  <li>hohe Qualität</li>
+                </ul>
+                <br>
+                <b>Haben Sie noch Fragen?</b>
+                <br>
+                Unser E-Mail Support antwortet
+                <br>
+                schnellstmöglich auf Ihre Nachrichten.
+              </div>
+            </div>
+            <div class="boxcontainer"><span class="boxtitle">Versand</span><!-- # Boxüberschrift 2 -->
+              <div class="boxcontent">
+                <div class="versand"><strong>Versandkosten per Post</strong>
+                  <ul>
+                    <li>Deutschland: <strong>0,00 EUR</strong></li>
+                    <li>Europa: <strong>6,90 EUR</strong></li>
+                    <li>International: <strong>6,90 EUR</strong></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="boxcontainer"><span class="boxtitle">Markenrecht</span><!-- # Boxüberschrift 2 -->
+              <div class="boxcontent">
+                <div class="versand"><!-- # Boxinhalt 2 -->Die im Angebot angegebenen Markennamen, Firmennamen und Warenzeichen, sind eingetragene Warenzeichen der betreffenden Firmen.  Die Nennung erfolgt zur Identifizierung.  Alle Rechte sind deren Inhabern vorbehalten!  Der hier angebotene Artikel ist kein Originalzubehör des jeweiligen Herstellers!
+                </div>
+              </div>
+            </div>
+            <div class="boxcontainer"><span class="boxtitle">Fotos <i class="fa fa-copyright"></i></span>
+              <div class="boxcontent">Bildquellennachweis:
+                <br>
+                Eigene Fotos
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Beginn Footer -->
+        <div class="footer"><img src="https://shop.strato.de/WebRoot/Store20/Shops/61713999/MediaGallery/dp.png" style="width: 80px; height: 45px;"> <img src="https://shop.strato.de/WebRoot/Store20/Shops/61713999/MediaGallery/paypal.png" style="width: 170px; height: 45px;"> <img src="https://shop.strato.de/WebRoot/Store20/Shops/61713999/MediaGallery/ueberweisung.png" style="width: 170px; height: 45px;">  
+          <br>
+          <!-- Beginn Copyright -->
+          <p style="width: 94%; margin-left: 3%; border-top: 1px solid #888; padding: 15px 0;">© foliapro | 2017
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

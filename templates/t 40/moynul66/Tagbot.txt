@@ -1,0 +1,13 @@
+1) Open tagbot.
+2) Put code in upper section. 
+3) Click Make slots button.
+4) Fill the Slots one for "Title" and other for images. You will add one image link two time like, 1 1, 2 2, 3 3, 4 4.
+5) Finally click on make code button and copy Code from the last section and past in ebay.
+
+For each listing up repeat Point 3,4,5.
+
+Note: if item has only one image then fill all fields with same link.
+
+Thank you!
+
+Tagbot link:  https://www.isdntek.com/tagbot/webtagbot.htm

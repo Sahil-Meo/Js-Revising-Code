@@ -1,0 +1,23 @@
+body{padding:0;margin:0}
+.clear{font-size:0; content:" "; clear:both; height:0; zoom:1; overflow:hidden}
+.tongtool-related{margin:0;padding:0;width:100%;background:#fff;}
+.tongtool-related ul{width:100%;list-style-type:none;padding:0px;margin:0px auto;}
+.tongtool-related ul li{padding:0px;margin:0px; float:left;list-style-type:none;position:relative;}
+.tongtool-related .item{margin:2px;border:solid 1px #ccc;}
+.tongtool-related ul li .item:hover{border:solid 1px #000;}
+.tongtool-related ul li a img{width:100%;}
+.tongtool-related ul li a{margin:10px;float:left;text-decoration:none;}
+.tongtool-related ul li a p{margin:10px 0 0 0;}
+.tongtool-related .pic{border: solid 0px #fff;margin:0;}
+.tongtool-related .title{color:#000;font-size:13px;line-height:15px;height:30px;overflow:hidden;text-align:left;width:100%;word-wrap:break-word;word-break:break-word;margin-bottom:5px}
+.tongtool-related .price{color:#666;font-size:11px;line-height:14px;font-weight:normal;height:29px;text-align:left;}
+.tongtool-related .price b{color:#000;cursor:pointer;font-size: 13px;font-weight: bold;}
+.tongtool-related .price span{color: #777777;cursor: pointer;font-size: 12px;font-weight:normal;text-decoration:line-through;}
+.tongtool-related .shipping{height:5px;color:#666;font-family:Verdana,sans-serif!important;font-size:11px;font-weight:normal;line-height:13px;text-align:left;}
+.tongtool-tag-off{width:58px;height:58px; background:url(img/tag-off.gif) no-repeat; position:absolute; top:-1px;left:-1px; z-index:99; text-align:center; color:#fff;}
+.tongtool-tag-off span{ display: block;transform: rotate(-45deg); font-size: 10px; font-weight: bold; position: absolute; left:-3px; top:13px }
+.tongtool-tag-off br{display:none;}d
+@media screen and (max-width: 960px){
+	.tongtool-related ul li{width:50%!important;border:0;}
+	.tongtool-related ul li:hover{border:0;}
+}

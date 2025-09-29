@@ -1,0 +1,1447 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@charset "utf-8";
+/* reset */
+div,
+span,
+h1,
+h2,
+p,
+em,
+img,
+strong,
+b,
+u,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+table,
+tr,
+th,
+td {
+  /* font-size: 100%; */
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  border: 0;
+  outline: 0;
+  background: transparent;
+}
+a {
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+  text-decoration: none;
+  color: #777;
+  background: transparent;
+}
+a:hover {
+  text-decoration: underline;
+}
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+table td,
+table th {
+  vertical-align: top;
+}
+/* end reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.-piston_specs table img, table tr, table th, table td, table, tr, th, td {
+  vertical-align: middle;
+}
+.-piston_specs_img {
+  width: 140px;
+  vertical-align: middle;
+  padding-left: 50px;
+}
+@media only screen and (max-width: 736px) {
+.-piston_specs_img {
+  width: 70px;
+  }
+}
+.small-image {
+  cursor: pointer;
+}
+.me-ebay-des {
+  border: solid 1px #ccc;
+  background-color: #fff;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.wrap {
+  position: relative;
+  text-align: left;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+@media (max-width: 1120px) {
+  .wrap {
+  padding-left: 18px;
+  padding-right: 18px;
+  max-width: 100%;
+  box-sizing: border-box;
+  }
+}
+.img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+html,
+body {
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-text-size-adjust: none;
+}
+.me-ebay-des {
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif;
+  -webkit-text-size-adjust: none;
+}
+p {
+  padding-bottom: 22px;
+  color: #5d5d5d;
+}
+.heading2 {
+  font-size: 24px;
+  line-height: 1.4;
+  margin-top: 14px;
+  margin-bottom: 14px;
+  font-weight: bold;
+  color: #414141;
+}
+@media only screen and (max-width: 737px) {
+  .heading2 {
+  font-size: 18px;
+  }
+}
+.atention {
+  font-size: 15px !important;
+  font-weight: bold;
+  color: #414141;
+  line-height: 1.48 !important;
+}
+.prod_name {
+  font-size: 26px;
+  line-height: 1;
+  color: #414141;
+  padding-top: 36px;
+  background: url('https://mizumoauto.net/ebay/store/images/product_name_bg.png') no-repeat 0 0;
+  background-position: 0 20%;
+}
+.prod_name > span {
+  font-weight: 300;
+}
+.prod_rating_h {
+  color: #4d4d4d;
+  font-size: 1.5em;
+  font-style: italic;
+  height: 21px;
+  line-height: 21px;
+  margin-top: 14px;
+  overflow: hidden;
+}
+.prod_rating_h span{
+  background: transparent;
+  color: #777;
+  cursor: pointer;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: baseline;
+}
+.prod_rating {
+  float: left;
+  padding-right: 10px;
+}
+
+@media only screen and (max-width: 736px) {
+  .prod_name {
+  font-size: 20px;
+  padding-top: 30px;
+  line-height: 1.2;
+  }
+}
+.u-color-gray {
+  color: #8c8c8c !important;
+}
+.u-color-gray-lighter {
+  color: #9a9a9a !important;
+}
+.u-color-gray-darker {
+  color: #383838 !important;
+}
+.green {
+  color: #7ea94c !important;
+}
+.white {
+  color: #fff;
+}
+.orange {
+  color: #ffab31 !important;
+}
+.black {
+  color: #3d4044 !important;
+}
+.hidden {
+  display: none !important;
+}
+.ov_hidden {
+  overflow: hidden !important;
+}
+.block {
+  display: block !important;
+}
+.nobg {
+  background: none !important;
+}
+.nobrdr {
+  border: 0 !important;
+}
+.mb0 {
+  margin-bottom: 0 !important;
+}
+.clear {
+  clear: both;
+  overflow: hidden;
+  height: 0;
+}
+.float_right {
+  float: right;
+}
+.float_left {
+  float: left;
+}
+.clear-modern:before,
+.clear-modern:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.bg_gray {
+  background-color: #f5f5f5;
+}
+.input-hidden {
+  display: none;
+}
+.head_header {
+  position: relative;
+}
+.head_header .header-top-line {
+  background: #f1f1f1;
+  height: 31px;
+  position: relative;
+  overflow: hidden;
+}
+.head_header .header-top {
+  background-color: #fff;
+  clear: both;
+  position: relative;
+  border-bottom: 1px solid #f1f1f1;
+}
+.head_header .header-top > .wrap {
+  padding-left: 70px;
+  height: 116px;
+}
+@media only screen and (max-width: 1120px) {
+  .head_header .header-top > .wrap {
+  padding-left: 18px;
+  }
+}
+@media only screen and (min-width: 737px) and (max-width: 1120px) {
+  .head_header .header-top > .wrap {
+  height: 66px;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .head_header .header-top > .wrap {
+  height: 45px;
+  }
+}
+/*---------FOOTER----------*/
+.b-footer {
+  clear: both;
+  font-size: 11px;
+  line-height: 1.36;
+  padding-top: 60px;
+}
+.b-footer__info {
+  background-color: #2d3034;
+  color: #fefefe;
+  padding-top: 76px;
+  padding-bottom: 60px;
+}
+@media only screen and (max-width: 736px) {
+  .b-footer__info {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  }
+}
+.b-footer__mobile {
+  width: 100%;
+}
+.f-block {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0 8px;
+  position: relative;
+  width: 19.9%;
+}
+
+.b-footer__other {
+  background: #212326;
+}
+.b-footer__logo,
+.b-footer__logotype,
+.b-footer__logotype2 {
+  display: inline-block;
+  margin-right: -100px;
+  margin-left: 30px;
+  vertical-align: middle;
+}
+.b-footer__logotype {
+  width: 200px;
+  height: 95px;
+  margin-right: 5px;
+  background: url('https://mizumoauto.net/ebay/store/images/logo2.png') no-repeat 0 0;
+  background-size: 100% auto;
+}
+.b-footer__logotype2 {
+  width: 150px;
+  height: 95px;
+  background: url('https://mizumoauto.net/ebay/store/images/logo3.png') no-repeat 0 0;
+  background-size: 100% auto;
+}
+@media only screen and (min-width: 737px) and (max-width: 1120px) {
+  .b-footer__logo,
+  .b-footer__logotype,
+  .b-footer__logotype2 {
+  display: none;
+  }
+  .f-block {
+  width: 30%;
+  }
+
+}
+@media only screen and (max-width: 736px) {
+  .b-footer__logo,
+  .b-footer__logotype,
+  .b-footer__logotype2 {
+  display: none;
+  }
+  .b-footer__text {
+  font-size: 1em;
+  }
+}
+
+
+.b-footer__text {
+  font-size: 1.2em;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+.b-footer__text span {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+@media only screen and (min-width: 737px) and (max-width: 1120px) {
+  .b-footer__text, .b-footer__text span {
+  font-size: 1.0em;
+  }
+ } 
+.b-footer__title {
+  padding-left: 44px;
+}
+.f-quick-link {
+  border-left: 1px solid #535559;
+  color: #7a7b7d;
+  padding: 0px 0px 0px 45px;
+  margin-top: 20px;
+}
+.f-quick-link-last {
+  border-right: 1px solid #535559;
+}
+
+@media only screen and (min-width: 737px) and (max-width: 1120px) {
+  .b-footer__text {
+  margin-left: 20px;
+  padding-left: 20px;
+  }
+  .f-quick-link {
+  border-left: none;  
+  border-right: 1px solid #535559;
+  }
+  .f-quick-link-last {
+  border-right: none;
+}
+}
+@media only screen and (max-width: 736px) {
+  .b-footer__text {
+  display: none;
+   /* border: none;
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 1.1em; */
+  }
+}
+.b-copyright {
+  color: #909191;
+  padding: 36px 8px;
+  text-align: center;
+}
+@media only screen and (max-width: 736px) {
+  .b-copyright {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1em;
+  padding-left: 0;
+  padding-right: 0;
+  }
+}
+/*---------FOOTER----------*/
+
+
+/* --------------------------------
+.nav
+  .item
+  .icon
+----------------------------------------*/
+.nav {
+  list-style: none;
+  margin-left: 30px;
+  padding-top: 22px;
+  padding-bottom: 8px;
+}
+@media only screen and (min-width: 737px) and (max-width: 1120px) {
+  .nav {
+  margin-left: 0%;
+  padding-top: 26px;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .nav {
+  display: none;
+  }
+}
+.nav > .item {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  min-width: 8%;
+}
+@media (max-width: 1120px) {
+  .nav > .item {
+  min-width: 1px;
+  }
+}
+.nav > .item > .link {
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  color: #414141;
+  display: block;
+  width: 100px;
+  white-space: normal;
+}
+@media only screen and (min-width: 1120px) and (max-width: 1440px) {
+  .nav > .item {
+  min-width: 8%;
+  }
+  .nav > .item > .link {
+  width: 85px;
+  }
+}
+@media only screen and (min-width: 737px) and (max-width: 1120px) {
+.nav > .item {
+  min-width: 8%;
+}  
+.nav > .item > .link {
+  font-size: 1.1em;
+  width: 50px;
+  }
+}
+.nav > .item > .link > .icon {
+  display: block;
+  margin-bottom: 8px;
+  background-size: auto 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 46px;
+}
+.nav > .item > .link:hover, .nav > .item > .link > .icon:hover {
+  text-decoration: none;
+  color: #ffd800;
+  opacity: 0.7;
+}
+
+
+@media (max-width: 1120px) {
+  .nav > .item > .link > .icon {
+  display: none;
+  }
+}
+.nav > .item > .link > .icon.-icon-engine-rebuild-kit {
+  background-image: url(https://mizumoauto.net/ebay/store/images/icon/Engine.png);
+}
+.nav > .item > .link > .icon.-icon-engine-gasket {
+  background-image: url(https://mizumoauto.net/ebay/store/images/icon/Engine_Gasket.png);
+}
+.nav > .item > .link > .icon.-icon-engine-bearing {
+  background-image: url(https://mizumoauto.net/ebay/store/images/icon/Engine_Bearing.png);
+}
+.nav > .item > .link > .icon.-icon-engine-valve {
+  background-image: url(https://mizumoauto.net/ebay/store/images/icon/Engine_Valve.png);
+}
+.nav > .item > .link > .icon.-icon-head-bolt {
+  background-image: url(https://mizumoauto.net/ebay/store/images/icon/Head_Bolt.png);
+}
+.nav > .item > .link > .icon.-icon-piston {
+  background-image: url(https://mizumoauto.net/ebay/store/images/icon/Piston.png);
+}
+.nav > .item > .link > .icon.-icon-timing-kit{
+  background-image: url(https://mizumoauto.net/ebay/store/images/icon/Timing_Kit.png);
+}
+.nav > .item > .link > .icon.-icon-water-pump {
+  background-image: url(https://mizumoauto.net/ebay/store/images/icon/Water_Pump.png);
+}
+.nav > .item > .link > .icon.-icon-oil-pump {
+  background-image: url(https://mizumoauto.net/ebay/store/images/icon/Oil_Pump.png);
+}
+.nav > .item > .link > .icon.-icon-power-steering-pump {
+  background-image: url(https://mizumoauto.net/ebay/store/images/icon/Power_Steering_Pump.png);
+}
+.nav > .item > .link > .icon.-icon-egr-valve {
+  background-image: url(https://mizumoauto.net/ebay/store/images/icon/EGR_Valve.png);
+}
+.nav > .item > .link > .icon.-icon-wheel-bearing {
+  background-image: url(https://mizumoauto.net/ebay/store/images/icon/Wheel_Hub_Bearing.png);
+}
+.nav:after {
+  content: "";
+  display: inline-block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+  width: 100%;
+}
+.promo {
+  color: #39393d;
+  font-weight: bold;
+  font-size: 1.1em;
+  line-height: 31px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+@media only screen and (max-width: 414px) {
+  .promo {
+  letter-spacing: normal;
+  font-size: 1em;
+  }
+}
+.promo:hover {
+  text-decoration: none;
+}
+.promo > span {
+  color: #ea6244;
+  font-weight: 500;
+  font-size: 13px;
+  margin-left: 8px;
+  padding-right: 14px;
+}
+@media only screen and (max-width: 414px) {
+  .promo > span {
+  font-size: 12px;
+  }
+}
+.promo > span:after {
+  background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAAFCAYAAACAcVaiAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAChJREFUeNpiPOfn+p+BgYERiBmYGCDgP4zDCBNggomCBGHKwLIAAQYA8sMFa5C69eMAAAAASUVORK5CYII=') no-repeat 0 0;
+  content: '';
+  display: inline-block;
+  height: 5px;
+  margin-left: 4px;
+  margin-bottom: 3px;
+  vertical-align: middle;
+  width: 3px;
+}
+.promo > span:hover {
+  text-decoration: none;
+}
+@media only screen and (max-width: 414px) {
+  .promo-wrap {
+  float: none;
+  }
+}
+.help-center {
+  background-color: #ea6244;
+  padding: 0 5px;
+}
+.help-center a {
+  color: #fafafa;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  line-height: 31px;
+  letter-spacing: 0.5px;
+}
+.head_logo_a {
+  background: #ffd800;
+  bottom: 0px;
+  padding-top: 5px;
+  position: absolute;
+  top: 0px;
+  width: 100px;
+  z-index: 5;
+}
+@media only screen and (max-width: 1120px) {
+  .head_logo_a {
+  left: 18px;
+  padding-top: 2px;
+  }
+}
+@media only screen and (min-width: 737px) and (max-width: 1120px) {
+  .head_logo_a {
+  width: auto;
+  bottom: -3px;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .head_logo_a {
+  width: auto;
+  bottom: -3px;
+  top: 0;
+  padding-top: 0;
+  }
+}
+.head_logo_a > img {
+  display: block;
+  padding-left: 2px;
+  padding-top: 0px;
+  width: 96px;
+}
+@media only screen and (max-width: 1120px) {
+  .head_logo_a > img {
+  width: 68px;
+  height: auto;
+  }
+}
+@media only screen and (min-width: 737px) and (max-width: 1120px) {
+  .head_logo_a > img {
+  width: 68px;
+  height: auto;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .head_logo_a > img {
+  width: 40px;
+  height: auto;
+  }
+}
+.head_logo_a > span {
+  background: url('https://mizumoauto.net/ebay/store/images/logo.png') no-repeat 0 0;
+  display: block;
+  height: 50px;
+  position: absolute;
+  right: -270px;
+  top: 35px;
+  width: 260px;
+}
+@media only screen and (max-width: 1120px) {
+  .head_logo_a > span {
+  background-size: 100% auto;
+  height: 30px;
+  right: -176px;
+  width: 156px;
+  }
+}
+@media only screen and (min-width: 737px) and (max-width: 1120px) {
+  .head_logo_a > span {
+  top: 18px;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .head_logo_a > span {
+  top: 13px;
+  right: -125px;
+  width: 114px;
+  }
+}
+/* HEADER SEARCH STARTS */
+#pst-search {
+  height: 50px;
+  width: 30%;
+  background-color: #FFFFFF;
+  margin: 40px 0px 40px 400px;
+  position: absolute;
+  background-size: 100% auto;
+}
+#pst-search img{
+  width: 100%;
+}
+@media only screen and (max-width: 1120px) {
+  #pst-search {
+  height: 30px;
+  width: 30%;
+  background-size: 100% auto;
+  }
+}
+@media only screen and (min-width: 737px) and (max-width: 1120px) {
+  #pst-search {
+  margin: 18px 0px 16px 280px;
+  width: 30%;
+  }
+}
+@media only screen and (max-width: 736px) {
+  #pst-search {
+  display: none;
+  }
+}
+#pst-search input {
+  font-family: 'Roboto';
+  background-color: transparent;
+  height: 36px;
+  line-height: 50px;
+  float: left;
+  width: 89%;
+  border: none;
+  text-align: left;
+  text-indent: 22px;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #919191;
+}
+@media only screen and (max-width: 1120px) {
+  #pst-search input {
+  height: 30px;
+  font-size: 1.2em;
+  background-size: 100% auto;
+  }
+}
+@media only screen and (min-width: 737px) and (max-width: 1120px) {
+  #pst-search {
+  margin: 18px 0px 17px 280px;
+  }
+}
+::-webkit-input-placeholder {
+ color: #919191;
+ opacity: 1 !important; /* for older chrome versions. may no longer apply. */
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+ color: #919191;
+ opacity: 1 !important;
+}
+
+:-ms-input-placeholder {
+ color: #919191;
+}
+#pst-search button {
+  transition: 0.3s all ease-in-out;
+  width: 11%;
+  height: 36px;
+  border: none;
+  float: right;
+  color: #fafafa;
+  font-size: 2.5em;
+  display: block;
+  border-left: 0;
+  text-align: center;
+  background: none;
+}
+#pst-search button:hover {
+  color: #ffd800;
+  transition: 0.3s all ease-in-out;
+}
+@media only screen and (max-width: 1120px) {
+  #pst-search button {
+  height: 30px;
+  font-size: 1.5em;
+  }
+}
+@media only screen and (min-width: 737px) and (max-width: 1120px) {
+  #pst-search {
+  }
+}
+/* HEADER SEARCH END */
+
+@media only screen and (max-width: 736px) {
+}
+
+.head_contact_info {
+  margin-top: 43px;
+  padding-left: 40px;
+  float: right;
+  z-index: 5;
+}
+@media only screen and (min-width: 737px) and (max-width: 1120px) {
+  .head_contact_info {
+  margin-top:23px;
+  float: right;
+  z-index: 5;
+  }
+  .head_contact_info img {
+  height: 20px;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .head_contact_info {
+  margin-top: 13px;
+  }
+  .head_contact_info img {
+  height: 18px;
+  }
+}
+.head_newsletter_info {
+  margin-top: 28px;
+  padding-left: 20px;
+  float: right;
+  z-index: 5;
+}
+@media only screen and (min-width: 737px) and (max-width: 1120px) {
+  .head_newsletter_info {
+  margin-top: 15px;
+  float: right;
+  padding-left: 10px;
+  z-index: 5;
+  }
+  .head_newsletter_info img {
+  height: 35px;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .head_newsletter_info {
+  display: none;
+  }
+}
+.product {
+  position: relative;
+}
+@media only screen and (max-width: 736px) {
+  .product {
+  padding-top: 76px;
+  }
+}
+.product__gallery {
+  position: relative;
+  float: left;
+  width: 62%;
+}
+@media only screen and (min-width: 737px) and (max-width: 1120px) {
+  .product__gallery {
+  padding-right: 22px;
+  width: 56%;
+  }
+}
+@media only screen and (max-width: 736px) {
+  .product__gallery {
+  width: 100%;
+  padding-right: 0;
+  }
+}
+.product__info {
+  position: relative;
+  overflow: hidden;
+  padding-left: 22px;
+}
+@media only screen and (max-width: 736px) {
+  .product__info {
+  width: 100%;
+  position: static;
+  padding-left: 0;
+  }
+}
+.b-product-info-id {
+  color: #414141;
+  font-size: 14px;
+  line-height: 1;
+  padding-bottom: 8px;
+}
+.b-product-info-id > b {
+  color: #313131;
+  font-weight: bold;
+}
+.b-product-info-status {
+  font-size: 14px;
+  padding-bottom: 22px;
+  color: #414141;
+}
+.b-product-info-status > .status {
+  font-size: 19px;
+  margin-right: 6px;
+  color: #7ea94c;
+}
+.b-product-info-status > .ship {
+  color: #313131;
+}
+.b-product-info-node {
+  border-top: 1px solid #ebebeb;
+  color: #414141;
+  font-size: 15px;
+}
+.b-product-info-node ul {
+  padding: 10px 20px;
+  background-color: #eee;
+}
+
+.b-product-info-node > span {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 14px;
+}
+@media only screen and (max-width: 736px) {
+  .b-product-info-node > span {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+  }
+}
+.b-product-info-node > b,
+.b-product-info-node > img,
+.b-product-info-node > span,
+.b-product-info-node > a {
+  display: inline-block;
+  vertical-align: middle;
+}
+.b-product-info-node > b {
+  color: #3d4044;
+  font-size: 16px;
+  font-weight: 600;
+}
+.b-product-info-node > img {
+  margin-left: 30px;
+  max-height: 60px;
+  width: auto !important;
+}
+@media only screen and (max-width: 736px) {
+  .b-product-info-node > img {
+  margin-left: 0;
+  max-width: 40%;
+  }
+}
+.b-product-info-node > a > img {
+  display: block;
+}
+.b-product-info-node.-brand > span {
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+.b-product-info-node.-remark {
+  color: #ea6244;
+  padding: 25px 10px;
+}
+.-remark:before {
+  font-family: fontawesome;
+  content: "\f071";
+  display: block;
+  float: left;
+  position: relative;
+  margin-top: 0.1em;
+  margin-right: 0.2em;
+  font-size: 2em;
+  color: #ea6244;
+}
+.-picture {
+    background-color: #4e4e4e;
+    margin: 15px 0 15px 0;
+    padding: 5px 10px;
+    text-align: center;
+}
+.-picture span {
+    padding: 10px 0;
+    display: inline-block;
+    color: #fff;
+    line-height: 16px;
+    font-size: 15px;
+    background-image: url(https://mizumoauto.net/ebay/store/images/icon/icon-info.png);
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 35px;
+}
+.b-product-info-node.-partnumber{
+	position:absolute;
+	left:0px;
+	top:-500px;
+	width:1px;
+	height:1px;
+	overflow:hidden;
+}
+.b-product-info-node.-ebay {
+  display: none;
+}
+.b-product-info-node.-ebay > a {
+  max-width: 40%;
+}
+.b-product-info-node.-brand[data-brand=""] {
+  display: none;
+}
+@media only screen and (max-width: 736px) {
+  .product-info-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  }
+}
+.b-gallery__view {
+  box-sizing: border-box;
+  float: none;
+  min-height: 360px;
+  overflow: hidden;
+  position: relative;
+  width: 70%;
+  text-align: center;
+}
+@media (max-width: 1120px) {
+  .b-gallery__view {
+  float: none;
+  margin-right: 1%;
+  margin-left: 0;
+  min-height: 200px;
+  position: relative;
+  padding-right: 0;
+  width: auto;
+  }
+}
+.b-gallery__items {
+  overflow: hidden;
+  position: relative;
+}
+@media (max-width: 1120px) {
+  .b-gallery__items {
+  max-width: 100%;
+  margin-bottom: 22px;
+  padding-top: 10px;
+  }
+}
+#img_gal .label-thumb,
+#media_gal a,
+.pdf-gal {
+  box-sizing: border-box;
+  float: left;
+  height: 64px;
+  margin: 0 3% 3% 0;
+  overflow: hidden;
+  position: relative;
+  max-width: 47%;
+}
+#img_gal .label-thumb:hover,
+#media_gal a:hover,
+.pdf-gal:hover {
+  top: -2px;
+}
+#media_gal a {
+  background: url('https://www.carid.com/images/ebay-new/css/images/video-icon.png') 50% top no-repeat;
+  background-size: 98% auto;
+}
+.label-thumb {
+  border-radius: 3px;
+}
+.label-thumb,
+.pdf-gal {
+  text-align: center;
+}
+.label-thumb > img,
+.pdf-gal > img {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 1120px) {
+  #img_gal .label-thumb,
+  #media_gal a,
+  .pdf-gal {
+  position: relative;
+  width: 19%;
+  height: 0;
+  margin: 1% 1% 0 0;
+  padding-top: 13.4%;
+  -webkit-background-size: 100% auto;
+  background-size: 100% auto;
+  }
+  #img_gal .label-thumb:hover,
+  #media_gal a:hover,
+  .pdf-gal:hover {
+  top: -2px;
+  }
+  #img_gal .label-thumb > img,
+  #media_gal a > img,
+  .pdf-gal > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: auto;
+  }
+}
+.label-thumb[data-src=""] {
+  display: none !important;
+}
+.gallery-image {
+  display: none;
+  max-width: 100%;
+  height: auto !important;
+}
+#gallery-image-0:checked ~ .gallery-image-0,
+#gallery-image-1:checked ~ .gallery-image-1,
+#gallery-image-2:checked ~ .gallery-image-2,
+#gallery-image-3:checked ~ .gallery-image-3,
+#gallery-image-4:checked ~ .gallery-image-4,
+#gallery-image-5:checked ~ .gallery-image-5,
+#gallery-image-6:checked ~ .gallery-image-6,
+#gallery-image-7:checked ~ .gallery-image-7,
+#gallery-image-8:checked ~ .gallery-image-8,
+#gallery-image-9:checked ~ .gallery-image-9,
+#gallery-image-10:checked ~ .gallery-image-10,
+#gallery-image-11:checked ~ .gallery-image-11,
+#gallery-image-12:checked ~ .gallery-image-12,
+#gallery-image-13:checked ~ .gallery-image-13,
+#gallery-image-14:checked ~ .gallery-image-14,
+#gallery-image-15:checked ~ .gallery-image-15,
+#gallery-image-16:checked ~ .gallery-image-16 {
+  display: inline-block;
+}
+.benefits {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.prod-benefits {
+  float: left;
+  width: 50%;
+/*  padding-left: 48px;
+  padding-top: 16px;
+  padding-bottom: 16px; */
+
+}
+@media only screen and (max-width: 1024px) {
+  .prod-benefits {
+  float: none;
+  width: 100%;
+  }
+}
+.prod-benefit {
+  font-size: 1.3em;
+  line-height: 1.2;
+  display: block;
+  color: #444;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.prod-benefit > span {
+  display: inline-block;
+  vertical-align: middle;
+  color: #8c8c8c;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif !important;
+}
+.prod-benefit > span > b {
+  font-weight: 600;
+  color: #3d4044;
+}
+@media only screen and (min-width: 1025px) and (max-width: 3000px) {
+  .prod-benefit > span > b {
+  display: list-item;
+  list-style: none;
+  }
+}
+/* @media only screen and (max-width: 1024px) {
+  .prod-benefit > span > b {
+  display: inline-block;
+  }
+} */
+
+.prod-benefit:before {
+  content: '';
+  margin-left: 0px;
+  width: 48px;
+  height: 33px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url('https://mizumoauto.net/ebay/store/images/benefits.png') no-repeat 0 0;
+}
+.prod-benefit.quick-return-benefit:before {
+  background-position: 0 -145px;
+}
+.prod-benefit.in-hous-exp-benefit:before {
+  background-position: 0 -96px;
+}
+.prod-benefit.free-ship-benefit:before {
+  background-position: 0 -49px;
+}
+.quick-return-benefit {
+  display: block;
+}
+.quick-return-benefit[data-returns=""] {
+  display: none;
+}
+.b-feedback {
+  padding-top: 34px;
+  padding-left: 22px;
+  position: relative;
+  overflow: hidden;
+}
+.b-feedback > img {
+  max-width: 100%;
+  height: auto;
+  image-rendering: auto;
+}
+@media only screen and (max-width: 1024px) {
+  .b-feedback {
+  display: none;
+  }
+}
+.b-rate { background: transparent url('https://mizumoauto.net/ebay/store/images/rate-transaction.png') no-repeat scroll 0px 0px / 100% auto; display: block; padding-top: 36%; margin-top: 62px; }
+@media only screen and (max-width: 736px) {
+  .b-rate {
+  display: none;
+  }
+}
+.all-tabs {
+  background-color: #eee;
+}
+@media only screen and (max-width: 736px) {
+  .all-tabs {
+  background-color: transparent;
+  }
+}
+.b-tabs {
+  position: relative;
+  text-align: left;
+  margin-top: -50px;
+  margin-bottom: 25px;
+  margin-left: 1%;
+  overflow: hidden;
+  width: 98%;
+  float: left;
+  background-color: white;
+}
+@media only screen and (min-width: 1025px) and (max-width: 1120px) {
+  .b-tabs {
+  width: 100%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .b-tabs {
+  width: 100%;
+  }
+}
+.b-tabs .tab-input {
+  display: none;
+}
+.b-tabs #tab1:checked ~ label[for="tab1"],
+.b-tabs #tab2:checked ~ label[for="tab2"],
+.b-tabs #tab3:checked ~ label[for="tab3"],
+.b-tabs #tab4:checked ~ label[for="tab4"] {
+  cursor: default;
+  color: #414141;
+  border-bottom-color: #ea6244;
+}
+@media only screen and (max-width: 736px) {
+  .b-tabs #tab1:checked ~ label[for="tab1"],
+  .b-tabs #tab2:checked ~ label[for="tab2"],
+  .b-tabs #tab3:checked ~ label[for="tab3"],
+  .b-tabs #tab4:checked ~ label[for="tab4"] {
+  border-bottom: none;
+  }
+  .b-tabs #tab1:checked ~ label[for="tab1"] .arrow,
+  .b-tabs #tab2:checked ~ label[for="tab2"] .arrow,
+  .b-tabs #tab3:checked ~ label[for="tab3"] .arrow,
+  .b-tabs #tab4:checked ~ label[for="tab4"] .arrow {
+  background-image: url(https://mizumoauto.net/ebay/store/images/icon/minus-gray.svg);
+  }
+}
+.b-tabs #tab1:checked ~ #tab-content-details .tab-inner,
+.b-tabs #tab2:checked ~ #tab-content-shipping .tab-inner,
+.b-tabs #tab3:checked ~ #tab-content-warranty .tab-inner,
+.b-tabs #tab4:checked ~ #tab-content-about .tab-inner {
+  display: block !important;
+}
+.b-tabs-wrap {
+  margin-top: 72px;
+  border-top: 1px solid #f2f2f2;
+}
+@media only screen and (max-width: 736px) {
+  .b-tabs-wrap {
+  border: none;
+  }
+}
+.b-tabs__btn {
+  border-bottom: 3px solid transparent;
+  color: #8a8a8a;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.6em;
+  line-height: 1;
+  margin-right: 46px;
+  margin-left: 0px;
+  padding-bottom: 26px;
+  padding-top: 26px;
+  position: relative;
+  vertical-align: top;
+  z-index: 3;
+}
+.b-tabs__btn:hover {
+  text-decoration: none;
+}
+@media only screen and (max-width: 736px) {
+  .b-tabs__btn:hover {
+  text-decoration: none;
+  }
+}
+.b-tabs__btn > .arrow {
+  display: none;
+  background-image: url(https://mizumoauto.net/ebay/store/images/icon/plus-gray.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 50px;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  right: 0;
+}
+@media only screen and (max-width: 736px) {
+  .b-tabs__btn {
+  font-size: 2em;
+  font-size: normal;
+  background-color: #f3f3f3;
+  display: block;
+  padding: 18px;
+  margin-top: 10px;
+  margin-right: 0;
+  }
+  .b-tabs__btn > .arrow {
+  display: block;
+  }
+}
+.b-tabs__content {
+  float: right;
+  position: relative;
+  width: 100%;
+  z-index: 2;
+}
+@media only screen and (max-width: 736px) {
+  .b-tabs__content {
+  float: none;
+  }
+}
+.b-tabs__content > .tab-inner {
+  display: none;
+  padding: 35px 35px;
+}
+@media only screen and (max-width: 736px) {
+  .b-tabs__content > .tab-inner {
+  padding-top: 20px;
+  }
+}
+.b-tabs__content p,
+.b-tabs__content ul,
+.b-tabs__content ol {
+  font-size: 15px;
+  line-height: 1.7;
+}
+.b-tabs__content ul,
+.b-tabs__content ol {
+  margin-left: 14px;
+  margin-bottom: 12px;
+}
+.b-tabs__content ul > li,
+.b-tabs__content ol > li {
+  padding-bottom: 10px;
+  color: #414141;
+}
+.b-tabs p > b {
+  font-size: 15px;
+  font-weight: bold;
+  color: #414141;
+  padding-top: 14px;
+  display: inline-block;
+}
+.details-img-wrap {
+  padding-bottom: 20px;
+}
+.details-img-wrap > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.details-wrap table {
+  margin: 0 0 22px !important;
+}
+.details-wrap table td:first-child {
+  padding-left: 0 !important;
+}
+@media only screen and (max-width: 414px) {
+  .details-wrap table td > img {
+  max-width: 100% !important;
+  height: auto !important;
+  }
+}
+.b-tabs__btn[data-video=""],
+.b-tabs__btn[data-video="0"] {
+  display: none;
+}
+
+.details-img-wrap-default > img {
+  max-width: 100%;
+  height: auto;
+}
+.details-img-wrap[data-descriptionimg=""] {
+  display: none;
+}
+.details-img-wrap-default {
+  display: none;
+}
+/*.details-img-wrap[data-descriptionimg=""] + .details-img-wrap-default {
+  display: block;
+}
+*/
+.short-description {
+  display: none;
+}
+.b-video {
+  width: 49%;
+  height: 247px;
+  float: left;
+  vertical-align: top;
+  margin-right: 2%;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  margin-bottom: 2%;
+  background: #000 url('https://mizumoauto.net/ebay/store/images/icon/video-icon.png') no-repeat 50% 40%;
+}
+@media only screen and (max-width: 1024px) {
+  .b-video {
+  background: #000;
+  }
+}
+.b-video:nth-child(even) {
+  margin-right: 0;
+}
+@media only screen and (max-width: 736px) {
+  .video-wrap > video {
+  width: 90%;
+  height: auto;
+  display: block;
+  float: none;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  margin-bottom: 20px;
+  }
+}

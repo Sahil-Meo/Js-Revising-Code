@@ -1,0 +1,1087 @@
+<div id="page-builder-desktop-preview">
+   <div id="page-builder-background">
+      <style type="text/css">
+         @import url("bootstrap.min.css");
+         @import url("min.css");
+         @import url("style.css");
+         @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600|Cabin:400|Cabin:700|Josefin+Sans:400|Josefin+Sans:700|Oswald:400|Oswald:700|Varela|Josefin+Slab:400|Josefin+Slab:700|Open+Sans:400|Open+Sans:700|Ovo|PT+Serif:400|PT+Serif:700|Wire+One|Kameron:400|Kameron:700|Rokkitt:400|Rokkitt:700|Maiden+Orange|Bevan|Dancing+Script|Tangerine|Pacifico|Damion|Permanent+Marker|Fugaz+One&subset=latin-ext,tamil,vietnamese,cyrillic,cyrillic-ext,greek,greek-ext,devanagari,chinese-simplified");
+         @import url("https://fonts.googleapis.com/css?family=Amaranth:400,400i,700,700i|Anton|Arima+Madurai:400,700|BioRhyme:400,700|Black+Ops+One|Bungee|Bungee+Shade|Concert+One|Creepster|Diplomata+SC|Eczar:400,700|Ewert|Fascinate+Inline|Fruktur|Gravitas+One|Kavoon|Modak|Mogra|Monoton|Open+Sans+Condensed:300,300i,700|Quicksand:400,700|Rakkas|Righteous|Roboto:400,400i,700,700i|Shrikhand|Space+Mono:400,700|Tillana:400,700|VT323|Yatra+One|ZCOOL+KuaiLe&subset=latin-ext,tamil,vietnamese,cyrillic,cyrillic-ext,greek,greek-ext,devanagari,chinese-simplified");
+         @import url("https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Unica+One&display=swap&subset=latin-ext");
+
+         #page-builder-edit-background .template-element.text-box {
+            overflow: hidden auto;
+         }
+
+         #page-builder-edit-background .template-element.text-box p:first-child {
+            margin-top: 10px;
+         }
+
+         #page-builder-edit-background .source-code {
+            overflow: auto;
+         }
+
+         #page-builder-edit-background .editing-source {}
+
+         #page-builder-edit-background .image-helper {
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+         }
+
+         #page-builder-edit-background img {
+            margin: auto;
+            max-width: 100%;
+            max-height: 100%;
+         }
+
+         #page-builder-edit-background .image-carousel {
+            text-align: center;
+         }
+
+         #page-builder-edit-background .image-carousel .big-image-box {
+            width: 100%;
+            text-align: center;
+            display: none;
+            position: relative;
+         }
+
+         #page-builder-edit-background .image-carousel .thumbnail-box {
+            width: 80px;
+            height: 80px;
+            border: 1px solid rgb(221, 221, 221);
+            text-align: center;
+            border-radius: 3px !important;
+         }
+
+         #page-builder-edit-background .image-carousel .label-thumbnail.peer {
+            cursor: pointer;
+            border-color: rgb(102, 102, 102);
+            opacity: 0.5;
+         }
+
+         #page-builder-edit-background .image-carousel input.slide-switch:checked+.big-image-box,
+         #page-builder-edit-background .image-carousel input.slide-switch:checked+.big-image-box+.big-image-box {
+            display: block;
+         }
+
+         #page-builder-edit-background .image-carousel input.slide-switch+.big-image-box+.big-image-box+.page-label-group,
+         #page-builder-edit-background .image-carousel input.slide-switch+.big-image-box+.big-image-box+.page-label-group+.page-label-group,
+         #page-builder-edit-background .image-carousel input.slide-switch+.big-image-box+.big-image-box+.page-label-group+.page-label-group+.page-label-group {
+            text-align: center;
+            display: none;
+         }
+
+         #page-builder-edit-background .image-carousel input.slide-switch:checked+.big-image-box+.big-image-box+.page-label-group,
+         #page-builder-edit-background .image-carousel input.slide-switch:checked+.big-image-box+.big-image-box+.page-label-group+.page-label-group,
+         #page-builder-edit-background .image-carousel input.slide-switch:checked+.big-image-box+.big-image-box+.page-label-group+.page-label-group+.page-label-group {
+            display: block;
+         }
+
+         #page-builder-edit-background .image-carousel .image-nav-btn:hover,
+         #page-builder-edit-background .image-carousel .page-btn:hover {
+            opacity: 1;
+         }
+
+         #page-builder-edit-background .image-carousel .image-nav-btn.disabled,
+         #page-builder-edit-background .image-carousel .page-btn.disabled {
+            cursor: not-allowed;
+            opacity: 0.5;
+         }
+
+         #page-builder-edit-background .image-carousel .big-image-box img {
+            width: 329%;
+            height: 99%;
+         }
+
+         #page-builder-edit-background .image-carousel .thumbnail-box img {
+            max-width: 100%;
+            max-height: 100%;
+         }
+
+         #page-builder-edit-background .image-carousel input.slide-switch {
+            display: none;
+         }
+
+         #page-builder-edit-background .image-carousel .label-thumbnail {
+            margin: 15px 5px;
+            border: 1px solid rgb(102, 102, 102);
+            cursor: default;
+            transition: all 0.5s ease 0s;
+            opacity: 1;
+         }
+
+         #page-builder-edit-background .image-carousel .label-thumbnail img {
+            display: inline-block;
+         }
+
+         #page-builder-edit-background .image-carousel .page-btn {
+            border: none;
+            height: 100%;
+            background-color: transparent;
+            display: inline-table;
+            cursor: pointer;
+            margin-bottom: 0px;
+         }
+
+         #page-builder-edit-background .image-carousel .page-btn:first-child {
+            float: left;
+         }
+
+         #page-builder-edit-background .image-carousel .page-btn:last-child {
+            float: right;
+         }
+
+         #page-builder-edit-background .image-carousel .page-btn span {
+            display: table-cell;
+            vertical-align: middle;
+         }
+
+         #page-builder-edit-background .image-carousel .image-nav-btn {
+            position: absolute;
+            top: 0px;
+            height: 100%;
+            display: table;
+            margin-bottom: 0px;
+            opacity: 0.7;
+            cursor: pointer;
+         }
+
+         #page-builder-edit-background .image-carousel .image-nav-btn span {
+            display: table-cell;
+            vertical-align: middle;
+            font-size: 18px;
+         }
+
+         #page-builder-edit-background .image-carousel .image-nav-btn:first-child {
+            left: 0px;
+         }
+
+         #page-builder-edit-background .image-carousel .image-nav-btn:last-child {
+            right: 0px;
+         }
+
+         #page-builder-edit-background .image-carousel .fa::before {
+            padding: 6px 12px;
+         }
+
+         #page-builder-edit-background .css-tabs .tab {
+            position: static;
+            margin-bottom: 0px;
+            float: none;
+            display: inline-block;
+         }
+
+         #page-builder-edit-background .css-tabs .tab-header-container {
+            width: 100%;
+         }
+
+         #page-builder-edit-background .css-tabs .tab-content {
+            width: 100%;
+            position: relative;
+            left: 0px;
+            top: 41px;
+         }
+
+         #page-builder-edit-background .css-tabs .tab-content>div {
+            padding: 10px 15px;
+         }
+
+         #page-builder-edit-background .css-tabs .tab-toggle {
+            text-align: center;
+            padding: 10px 15px;
+         }
+
+         #page-builder-edit-background .css-tabs input.slide-switch {
+            display: none;
+         }
+
+         #page-builder-edit-background .css-tabs label {
+            cursor: pointer;
+            margin-bottom: -1px;
+         }
+
+         #page-builder-edit-background .css-tabs .tab:first-child label {
+            border-left-width: 1px;
+         }
+
+         #page-builder-edit-background .css-tabs input.slide-switch+.nav-tabs,
+         #page-builder-edit-background .css-tabs input.slide-switch+.nav-tabs+.nav-tabs,
+         #page-builder-edit-background .css-tabs input.slide-switch+.nav-tabs+.nav-tabs+.nav-tabs,
+         #page-builder-edit-background .css-tabs input.slide-switch+.nav-tabs+.nav-tabs+.nav-tabs+.nav-tabs,
+         #page-builder-edit-background .css-tabs input.slide-switch+.nav-tabs+.nav-tabs+.nav-tabs+.nav-tabs+.tab-content {
+            display: none;
+         }
+
+         #page-builder-edit-background .css-tabs input.slide-switch:checked+.nav-tabs,
+         #page-builder-edit-background .css-tabs input.slide-switch:checked+.nav-tabs+.nav-tabs,
+         #page-builder-edit-background .css-tabs input.slide-switch:checked+.nav-tabs+.nav-tabs+.nav-tabs,
+         #page-builder-edit-background .css-tabs input.slide-switch:checked+.nav-tabs+.nav-tabs+.nav-tabs+.nav-tabs,
+         #page-builder-edit-background .css-tabs input.slide-switch:checked+.nav-tabs+.nav-tabs+.nav-tabs+.nav-tabs+.tab-content {
+            display: block;
+         }
+
+         #page-builder-edit-background .css-tabs input.slide-switch:checked+.nav-tabs+.nav-tabs+.nav-tabs+.nav-tabs.hidden-md,
+         #page-builder-edit-background .css-tabs input.slide-switch:checked+.nav-tabs+.nav-tabs+.nav-tabs.hidden-md,
+         #page-builder-edit-background .css-tabs input.slide-switch:checked+.nav-tabs+.nav-tabs.hidden-md,
+         #page-builder-edit-background .css-tabs input.slide-switch:checked+.nav-tabs.hidden-md {
+            display: flex;
+         }
+
+         #page-builder-edit-background .btn.active.focus,
+         #page-builder-edit-background .btn.active:focus,
+         #page-builder-edit-background .btn.focus,
+         #page-builder-edit-background .btn:active.focus,
+         #page-builder-edit-background .btn:active:focus,
+         #page-builder-edit-background .btn:focus {
+            outline: none;
+         }
+
+         #page-builder-edit-background .btn-primary {
+            background-color: rgb(122, 181, 90);
+            border: none;
+         }
+
+         #page-builder-edit-background .btn-primary:active,
+         #page-builder-edit-background .btn-primary:focus,
+         #page-builder-edit-background .btn-primary:hover {
+            text-decoration: underline;
+            border: none;
+            background-color: rgb(122, 181, 90) !important;
+         }
+
+         #page-builder-edit-background {
+            overflow: auto;
+            height: 100% !important;
+         }
+
+         #page-builder-edit-background .row {
+            position: relative;
+         }
+
+         #page-builder-edit-background #page-builder-edit-area,
+         #page-builder-edit-background #page-builder-edit-area-auto-width {
+            position: relative;
+            margin: auto;
+            max-width: 100%;
+         }
+
+         #page-builder-edit-background .template-element.insert-after::after,
+         #page-builder-edit-background .template-element.insert-before::before {
+            position: absolute;
+            top: 2px;
+            bottom: 2px;
+            content: " ";
+            width: 1px;
+            border: 2px solid rgb(174, 234, 0);
+            white-space: pre;
+            animation: 0.5s steps(3, start) 0s infinite normal none running a;
+         }
+
+         #page-builder-edit-background .col {
+            min-height: 30px;
+            padding: 30px 15px;
+         }
+
+         #page-builder-edit-background .template-element {
+            position: relative;
+            display: inline-block;
+         }
+
+         #page-builder-edit-background .template-element .element-link {
+            position: absolute;
+            inset: 0px;
+            z-index: 2;
+         }
+
+         #page-builder-edit-background .template-element.linked {
+            cursor: pointer;
+         }
+
+         #page-builder-edit-background .template-element.insert-before::before {
+            left: -4px;
+         }
+
+         #page-builder-edit-background .template-element.insert-after::after {
+            right: -4px;
+         }
+
+         @media (min-width: 576px) {
+            #page-builder-edit-background #page-builder-edit-area {
+               width: 540px;
+            }
+         }
+
+         @media (min-width: 768px) {
+            #page-builder-edit-background #page-builder-edit-area {
+               width: 720px;
+            }
+         }
+
+         @media (min-width: 992px) {
+            #page-builder-edit-background #page-builder-edit-area {
+               width: 960px;
+            }
+         }
+
+         @media (min-width: 1200px) {
+            #page-builder-edit-background #page-builder-edit-area {
+               width: 960px;
+            }
+         }
+
+         #page-builder-edit-background .cross-sell .cross-sell-image-box,
+         #page-builder-edit-background .cross-sell .cross-sell-item-card {
+            overflow: hidden;
+         }
+
+         #page-builder-edit-background .cross-sell .cross-sell-item-title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 3;
+            line-height: 1.5;
+            height: 4.5em;
+         }
+
+         #page-builder-edit-background .cross-sell .cross-sell-item-price {
+            text-align: right;
+         }
+
+         #page-builder-edit-background .cross-sell .cta-btn {
+            margin-bottom: 5px;
+         }
+
+         #page-builder-edit-background .link-button .btn {
+            float: none;
+         }
+
+         #page-builder-edit-background .link-button .vertical>.btn {
+            display: block;
+         }
+
+         #page-builder-edit-background [data-element="searchBox"] input:focus,
+         #page-builder-edit-background [data-element="searchBox"] input:focus+.input-group-btn>button {
+            border-color: rgb(102, 175, 233);
+            box-shadow: rgba(0, 0, 0, 0.075) 0px 1px 1px inset, rgba(102, 175, 233, 0.6) 0px 0px 8px;
+         }
+
+         #page-builder-edit-background .checkbox-container {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: inline-flex;
+            -webkit-box-align: center;
+            align-items: center;
+         }
+
+         #page-builder-edit-background .checkbox-container input {
+            margin-top: 0px;
+            margin-right: 3px;
+         }
+
+         #page-builder-edit-background .checkbox-container label {
+            cursor: pointer;
+            margin-bottom: 0px;
+         }
+
+         #page-builder-edit-background input+.c-text label:last-child,
+         #page-builder-edit-background input:checked+.c-text label:first-child {
+            display: none;
+         }
+
+         #page-builder-edit-background ul {
+            margin-bottom: 0px;
+         }
+
+         #page-builder-edit-background .c-list {
+            overflow: hidden;
+         }
+
+         #page-builder-edit-background .c-list input {
+            display: none;
+         }
+
+         #page-builder-edit-background .c-list .c-item>div {
+            width: 100%;
+         }
+
+         #page-builder-edit-background .c-list .c-item .c-text {
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+         }
+
+         #page-builder-edit-background .c-list div>a {
+            -webkit-box-flex: 1;
+            flex: 1 1 0%;
+         }
+
+         #page-builder-edit-background .c-header>div,
+         #page-builder-edit-background .c-list a>div {
+            width: 100%;
+         }
+
+         #page-builder-edit-background label {
+            cursor: pointer;
+         }
+
+         #page-builder-edit-background hr {
+            margin: 5px 0px;
+         }
+
+         #page-builder-edit-background input:checked+.c-text label:last-child {
+            display: block;
+         }
+
+         #page-builder-edit-background input+.c-text~* {
+            display: none;
+         }
+
+         #page-builder-edit-background input:checked+.c-text~* {
+            display: block;
+         }
+
+         #page-builder-edit-background .lev1 {
+            list-style-type: none;
+            padding-left: 1rem;
+            font-size: 0.8em;
+         }
+
+         #page-builder-edit-background .lev2 {
+            list-style-type: none;
+            padding-left: 2rem;
+            font-size: 0.75em;
+         }
+      </style>
+      <link href="https://s3.amazonaws.com/templates.frg.im/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet"
+         type="text/css">
+      <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+         type="text/css">
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet" type="text/css">
+      <link
+         href="https://fonts.googleapis.com/css?family=Open+Sans:400,600|Cabin:400|Cabin:700|Josefin+Sans:400|Josefin+Sans:700|Oswald:400|Oswald:700|Varela|Josefin+Slab:400|Josefin+Slab:700|Open+Sans:400|Open+Sans:700|Ovo|PT+Serif:400|PT+Serif:700|Wire+One|Kameron:400|Kameron:700|Rokkitt:400|Rokkitt:700|Maiden+Orange|Bevan|Dancing+Script|Tangerine|Pacifico|Damion|Permanent+Marker|Fugaz+One&amp;subset=latin-ext,tamil,vietnamese,cyrillic,cyrillic-ext,greek,greek-ext,devanagari,chinese-simplified"
+         rel="stylesheet" type="text/css">
+      <link
+         href="https://fonts.googleapis.com/css?family=Amaranth:400,400i,700,700i|Anton|Arima+Madurai:400,700|BioRhyme:400,700|Black+Ops+One|Bungee|Bungee+Shade|Concert+One|Creepster|Diplomata+SC|Eczar:400,700|Ewert|Fascinate+Inline|Fruktur|Gravitas+One|Kavoon|Modak|Mogra|Monoton|Open+Sans+Condensed:300,300i,700|Quicksand:400,700|Rakkas|Righteous|Roboto:400,400i,700,700i|Shrikhand|Space+Mono:400,700|Tillana:400,700|VT323|Yatra+One|ZCOOL+KuaiLe&amp;subset=latin-ext,tamil,vietnamese,cyrillic,cyrillic-ext,greek,greek-ext,devanagari,chinese-simplified"
+         rel="stylesheet" type="text/css">
+      <link
+         href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i|Unica+One&amp;display=swap&amp;subset=latin-ext"
+         rel="stylesheet" type="text/css">
+      <style type="text/css">
+         .no-subscribe {
+            display: none
+         }
+      </style>
+      <style type="text/css">
+         [contenteditable] {
+            pointer-events: none;
+         }
+      </style>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <div id="page-builder-edit-background" class="" data-editor-class-names="rows-level columns-level"
+         style="z-index: 14; width: auto; height: auto; padding: 0px; font-size: 14px; box-shadow: none; font-style: normal; text-align: left; font-family: &quot;Open Sans&quot;, sans-serif; font-weight: normal; background-size: auto; text-decoration: none; background-color: rgba(144, 19, 254, 0.23); background-image: url(&quot;https://s3.amazonaws.com/templates.frg.im/backgrounds/plaid.png&quot;);">
+         <div id="page-builder-edit-area">
+            <div id="page-builder-edit-area-content"
+               style="z-index: 13; width: auto; height: auto; margin: 20px auto; padding: 0px; font-size: 14px; box-shadow: rgba(0, 0, 0, 0.498) 0px 0px 8px 0px; font-style: normal; text-align: left; font-family: &quot;Open Sans&quot;, sans-serif; font-weight: normal; border-color: rgb(177, 145, 18); border-style: solid; border-width: 1px; text-decoration: none; background-color: rgba(255, 255, 255, 0.88); background-image: none; border-radius: 10px; position: relative; max-width: 90%;">
+               <div class="container-fluid">
+                  <div class="product-description no-subscribe">
+                     <div data-element="productDescription">The Smith Tarot:
+                        1. 100% Brand New
+                        2. no worries services, if you are a tarot lover, you won't regret to buy it as it's good
+                        quality. if you are newer, don't worry it about, we will send the instructions to your email.
+                        3. Cards size is 102*58mm
+                        4. English rules send by email.
+                        5. Total 78 cards
+                        6. Full English Version. Amazing!!
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div id="Column_4" class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+                        <div id="elm-1" class="template-element    " data-element="image"
+                           style="position: relative; top: 0px; left: 0px; width: 121px; height: auto; z-index: 7;"><img
+                              src="https://i.frog.ink/sxnIObnj/logo.png" id="elm-1-image"
+                              style="z-index: 7; top: 0px; left: 0px; width: 100%; height: auto; padding: 0px; font-size: 14px; position: static; box-shadow: none; font-style: normal; text-align: left; font-family: &quot;Open Sans&quot;, sans-serif; font-weight: normal; text-decoration: none; background-color: initial; background-image: none;">
+                        </div>
+                        <div id="elm-5" class="template-element    "
+                           style="position: relative; top: 0px; left: 0px; width: 100%; height: auto; z-index: 3;">
+                           <div id="elm-5-export" class="export-only"
+                              style="align-items: center; z-index: 3; top: 0px; left: 0px; width: 100%; height: auto; padding: 0px; font-size: 20px; overflow: hidden auto; position: static; box-shadow: none; font-style: normal; text-align: left; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: bold; text-decoration: none; background-color: initial; background-image: none; display: inline-flex;">
+                              <div style="width: 100%;">
+                                 <div data-element="productTitle">Rider Waite ORIGINAL Tarot Card Cards Deck 78 Cards
+                                    REGULAR size</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div id="elm-6" class="template-element    " data-element="square"
+                           style="z-index: 8; top: 0px; left: 0px; width: 100%; height: 3px; padding: 0px; font-size: 14px; position: relative; box-shadow: none; font-style: normal; text-align: left; font-family: &quot;Open Sans&quot;, sans-serif; font-weight: normal; border-color: rgba(139, 87, 42, 0.46); border-style: solid; border-width: 0px; border-radius: 0px; text-decoration: none; background-color: rgb(209, 179, 25); background-image: none;">
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row"
+                     style="height: auto; padding: 0px; font-size: 14px; box-shadow: none; font-style: normal; text-align: left; font-family: &quot;Open Sans&quot;, sans-serif; font-weight: normal; background-size: auto; text-decoration: none; background-color: rgba(192, 159, 25, 0.48); background-image: url(&quot;https://s3.amazonaws.com/templates.frg.im/backgrounds/speckle.png&quot;);">
+                     <div id="Column_5" class="col col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                        <div id="elm-9" class="template-element    " data-element="icon"
+                           style="align-items: center; z-index: 10; top: 0px; left: 0px; color: rgb(255, 255, 255); width: 50px; height: 50px; padding: 0px; font-size: 14px; position: relative; box-shadow: none; font-style: normal; text-align: center; font-family: &quot;Open Sans&quot;, sans-serif; font-weight: normal; text-decoration: none; background-color: initial; background-image: none; display: inline-flex;">
+                           <div style="width: 100%;"><i class="fa fa-truck fa-flip-horizontal fa-3x"
+                                 style="font-size: 50px; color: rgb(255, 255, 255);"></i></div>
+                        </div>
+                        <div id="elm-12" class="template-element     text-box"
+                           style="z-index: 13; top: 0px; left: 0px; color: rgb(255, 255, 255); width: 200px; display: inline-flex; padding: 0px; font-size: 22px; position: relative; box-shadow: none; font-style: normal; text-align: left; font-family: &quot;Open Sans&quot;, sans-serif; font-weight: bold; text-decoration: none; background-color: initial; background-image: none;">
+                           <div style="width: 100%; overflow-x: auto;">
+                              <div class="" style="position: relative;">
+                                 <p>Free Shipping</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="Column_6" class="col col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                        <div id="elm-10" class="template-element    " data-element="icon"
+                           style="align-items: center; z-index: 11; top: 0px; left: 0px; color: rgb(255, 255, 255); width: 50px; height: 50px; padding: 0px; font-size: 14px; position: relative; box-shadow: none; font-style: normal; text-align: center; font-family: &quot;Open Sans&quot;, sans-serif; font-weight: normal; text-decoration: none; background-color: initial; background-image: none; display: inline-flex;">
+                           <div style="width: 100%;"><i class="fa fa-tags  fa-3x"
+                                 style="font-size: 50px; color: rgb(255, 255, 255);"></i></div>
+                        </div>
+                        <div id="elm-13" class="template-element     text-box"
+                           style="z-index: 14; top: 0px; left: 0px; color: rgb(255, 255, 255); width: 200px;  display: inline-flex; padding: 0px; font-size: 22px; position: relative; box-shadow: none; font-style: normal; text-align: left; font-family: &quot;Open Sans&quot;, sans-serif; font-weight: bold; text-decoration: none; background-color: initial; background-image: none;">
+                           <div style="width: 100%; overflow-x: auto;">
+                              <div class="" style="position: relative;">
+                                 <p>Great Prices</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="Column_7" class="col col-xs-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 ">
+                        <div id="elm-11" class="template-element    " data-element="icon"
+                           style="align-items: center; z-index: 12; top: 0px; left: 0px; color: rgb(255, 255, 255); width: 50px; height: 50px; padding: 0px; font-size: 14px; position: relative; box-shadow: none; font-style: normal; text-align: center; font-family: &quot;Open Sans&quot;, sans-serif; font-weight: normal; text-decoration: none; background-color: initial; background-image: none; display: inline-flex;">
+                           <div style="width: 100%;"><i class="fa fa-calendar-check-o  fa-3x"
+                                 style="font-size: 50px; color: rgb(255, 255, 255);"></i></div>
+                        </div>
+                        <div id="elm-14" class="template-element     text-box"
+                           style="z-index: 15; top: 0px; left: 0px; color: rgb(255, 255, 255); width: 200px; display: inline-flex; padding: 0px; font-size: 22px; position: relative; box-shadow: none; font-style: normal; text-align: left; font-family: &quot;Open Sans&quot;, sans-serif; font-weight: bold; text-decoration: none; background-color: initial; background-image: none;">
+                           <div style="width: 100%; overflow-x: auto;">
+                              <div class="" style="position: relative;">
+                                 <p>Quick Delivery</p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row"
+                     style="height: auto; padding: 0px; font-size: 14px; box-shadow: none; font-style: normal; text-align: left; font-family: &quot;Open Sans&quot;, sans-serif; font-weight: normal; text-decoration: none; background-color: rgba(139, 87, 42, 0.17); background-image: none;">
+                     <div id="Column_1" class="col col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 focused">
+                        <div class="template-element     " id="elm-0"
+                           style="width: 100%; position: relative; top: 0px; left: 0px;">
+                           <style>
+                              #elm-0 .fa:before {
+                                 background-color: transparent;
+                                 background-image: none;
+                                 border-color: transparent;
+                                 border-width: 0px;
+                                 border-style: none;
+                                 box-shadow: none;
+                                 color: #333;
+                                 font-size: 18px;
+                                 border-top-left-radius: undefined;
+                                 border-top-right-radius: undefined;
+                                 border-bottom-left-radius: undefined;
+                                 border-bottom-right-radius: undefined;
+                                 padding-left: 12px !important;
+                                 padding-top: 6px !important;
+                                 padding-right: 12px !important;
+                                 padding-bottom: 6px !important;
+                                 margin-left: 0px;
+                                 margin-right: 0px;
+                              }
+                           </style>
+                           <div class="export-only"></div>
+                           <div style="position: relative; width: 100%; height: 400px; z-index: 2;">
+                              <div id="elm-0-export" class="image-carousel export-only" data-element="carousel"
+                                 style="z-index: 2; inset: 0px; width: 100%; height: 100%; padding: 0px; font-size: 14px; position: static; box-shadow: none; font-style: normal; text-align: center; font-family: &quot;Open Sans&quot;, sans-serif; font-weight: normal; text-decoration: none; background-color: initial; background-image: none; overflow: hidden;">
+                                 <div>
+                                    <style>
+                                       @media only screen and (min-width: 992px) {
+                                          #elm-0-export .big-image-box {
+                                             height: 400px;
+                                             position: static;
+                                          }
+                                       }
+
+                                       @media only screen and (max-width: 991px) and (min-width: 576px) {
+                                          #elm-0-export .big-image-box {
+                                             height: 400px;
+                                             position: static;
+                                          }
+                                       }
+
+                                       @media only screen and (max-width: 575px) {
+                                          #elm-0-export .big-image-box {
+                                             height: 400px;
+                                             position: static;
+                                          }
+                                       }
+                                    </style>
+                                    <span class="label-group">
+                                       <input type="radio" class="slide-switch" name="elm-0-slide-switch"
+                                          id="elm-0-image-0" value="on" checked="">
+                                       <div class="big-image-box" style="height: 0px; border: none;"></div>
+                                       <div class="big-image-box"><label class="image-nav-btn  "
+                                             for="elm-0-image--1"><span class="fa fa-chevron-left"></span></label><span
+                                             class="image-helper"></span><img
+                                             src="img/download (1).jpg"><label
+                                             class="image-nav-btn  " for="elm-0-image-1"><span
+                                                class="fa fa-chevron-right"></span></label></div>
+                                    </span>
+                                    <span class="label-group">
+                                       <input type="radio" class="slide-switch" name="elm-0-slide-switch"
+                                          id="elm-0-image-1" value="on">
+                                       <div class="big-image-box" style="height: 0px; border: none;"></div>
+                                       <div class="big-image-box"><label class="image-nav-btn  "
+                                             for="elm-0-image-0"><span class="fa fa-chevron-left"></span></label><span
+                                             class="image-helper"></span><img
+                                             src="img/download2.jpg"><label
+                                             class="image-nav-btn  " for="elm-0-image-2"><span
+                                                class="fa fa-chevron-right"></span></label></div>
+                                    </span>
+                                    <span class="label-group">
+                                       <input type="radio" class="slide-switch" name="elm-0-slide-switch"
+                                          id="elm-0-image-2" value="on">
+                                       <div class="big-image-box" style="height: 0px; border: none;"></div>
+                                       <div class="big-image-box"><label class="image-nav-btn  "
+                                             for="elm-0-image-1"><span class="fa fa-chevron-left"></span></label><span
+                                             class="image-helper" width="336px" hight="318px"></span><img
+                                             src="img/download (2).jpg"><label
+                                             class="image-nav-btn  " for="elm-0-image-3"><span
+                                                class="fa fa-chevron-right"></span></label></div>
+                                    </span>
+                                    <span class="label-group">
+                                       <input type="radio" class="slide-switch" name="elm-0-slide-switch"
+                                          id="elm-0-image-3" value="on">
+                                       <div class="big-image-box" style="height: 0px; border: none;"></div>
+                                       <div class="big-image-box"><label class="image-nav-btn  "
+                                             for="elm-0-image-2"><span class="fa fa-chevron-left"></span></label><span
+                                             class="image-helper"></span><img
+                                             src="img/download.jpg"><label
+                                             class="image-nav-btn  " for="elm-0-image-4"><span
+                                                class="fa fa-chevron-right"></span></label></div>
+                                    </span>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="export-only"></div>
+                        </div>
+                     </div>
+                     <div id="Column_2" class="col col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 ">
+                        <div id="elm-2" class="template-element    "
+                           style="position: relative; top: 0px; left: 0px; width: 100%; height: auto; z-index: 4;">
+                           <div id="elm-2-export" class="export-only source-code"
+                              style="z-index: 4; top: 0px; left: 0px; width: 100%; height: auto; padding: 0px; font-size: 14px; position: static; box-shadow: none; font-style: normal; text-align: left; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; text-decoration: none; background-color: initial; background-image: none;">
+                              <div>
+                                 <div data-element="productDescription" vocab="https://schema.org/" typeof="Product">
+                                    <span property="description">
+                                       <h2>Design and Style:</h2>
+                                       The Smith Tarot:
+                                       1. 100% Brand New
+                                       2. no worries services, if you are a tarot lover, you won't regret to buy it as
+                                       it's good quality. if you are newer, don't worry it about, we will send the
+                                       instructions to your email.
+                                       3. Cards size is 102*58mm
+                                       4. English rules send by email.
+                                       5. Total 78 cards
+                                       6. Full English Version. Amazing!!
+                                       <h3>Features</h3>
+                                       <h5>Durability:</h5> Branded shoes are designed to be long-lasting and can withstand everyday wear and tear. 
+
+                                      <h5> Brand Reputation:</h5> These shoes carry the reputation of the brand, which often stands for a certain l
+                                      
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row"
+                     style="height: auto; padding: 0px; font-size: 14px; box-shadow: none; font-style: normal; text-align: left; font-family: &quot;Open Sans&quot;, sans-serif; font-weight: normal; border-color: rgb(0, 0, 0); border-style: solid; border-width: 1px; text-decoration: none; background-color: rgb(233, 233, 233); background-image: none;">
+                     <div id="Column_3" class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+                        <div id="elm-7" class="template-element focused     css-tabs template-element focused"
+                           data-element="richTextTabs"
+                           style="position: relative; top: 0px; left: 0px; width: 100%; height: 216px; z-index: 9;">
+                           <input type="radio" class="slide-switch" name="elm-7-slide-switch" id="elm-7-tab-0"
+                              value="on" checked="">
+                           <ul class="tab-header-container nav nav-tabs"
+                              style="text-align: left; font-size: 14px; line-height: 1.5; border: none; z-index: 0;">
+                              <li class="tab">
+                                 <label for="elm-7-tab-0"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; padding-bottom: 1px; cursor: default;">
+                                    <div class="tab-toggle">Payment</div>
+                                 </label>
+                              </li>
+                              <li class="tab">
+                                 <label for="elm-7-tab-1"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid;">
+                                    <div class="tab-toggle">Shipping</div>
+                                 </label>
+                              </li>
+                              <li class="tab">
+                                 <label for="elm-7-tab-2"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid;">
+                                    <div class="tab-toggle">Returns</div>
+                                 </label>
+                              </li>
+                           </ul>
+                           <ul class="tab-header-container nav nav-tabs hidden-md hidden-lg hidden-sm hidden-xs"
+                              style="text-align: left; font-size: 14px; line-height: 1.5; border: none; z-index: 0;">
+                              <li class="tab" style="flex: 1 1 0%;">
+                                 <label for="elm-7-tab-0"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; padding-bottom: 1px; cursor: default; width: 100%;">
+                                    <div class="tab-toggle">Payment</div>
+                                 </label>
+                              </li>
+                              <li class="tab">
+                                 <label for="elm-7-tab-1"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid;">
+                                    <div class="tab-toggle"><span style="color: white;">&nbsp;</span><span
+                                          class="fa fa-caret-right"></span><span style="color: white;">&nbsp;</span>
+                                    </div>
+                                 </label>
+                              </li>
+                           </ul>
+                           <ul class="tab-header-container nav nav-tabs"
+                              style="text-align: left; font-size: 14px; line-height: 1.5; border: none; z-index: -2; position: absolute; top: 0px; left: 0px;">
+                              <li class="tab">
+                                 <label for="elm-7-tab-0"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; padding-bottom: 1px; cursor: default; box-shadow: none;">
+                                    <div class="tab-toggle">Payment</div>
+                                 </label>
+                              </li>
+                              <li class="tab">
+                                 <label for="elm-7-tab-1"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; box-shadow: none;">
+                                    <div class="tab-toggle">Shipping</div>
+                                 </label>
+                              </li>
+                              <li class="tab">
+                                 <label for="elm-7-tab-2"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; box-shadow: none;">
+                                    <div class="tab-toggle">Returns</div>
+                                 </label>
+                              </li>
+                           </ul>
+                           <ul class="tab-header-container nav nav-tabs hidden-md hidden-lg hidden-sm hidden-xs"
+                              style="text-align: left; font-size: 14px; line-height: 1.5; border: none; z-index: -2; position: absolute; top: 0px; left: 0px;">
+                              <li class="tab" style="flex: 1 1 0%;">
+                                 <label for="elm-7-tab-0"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; padding-bottom: 1px; cursor: default; width: 100%; box-shadow: none;">
+                                    <div class="tab-toggle">Payment</div>
+                                 </label>
+                              </li>
+                              <li class="tab">
+                                 <label for="elm-7-tab-1"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; box-shadow: none;">
+                                    <div class="tab-toggle"><span style="color: white;">&nbsp;</span><span
+                                          class="fa fa-caret-right"></span><span style="color: white;">&nbsp;</span>
+                                    </div>
+                                 </label>
+                              </li>
+                           </ul>
+                           <div class="tab-content"
+                              style="height: 174px; background-color: white; background-image: none; border-color: rgb(221, 221, 221); border-width: 1px; border-style: solid; border-top-left-radius: 0px; top: 0px; box-shadow: none; z-index: -1;">
+                              <div id="elm-7-tab-editor-0" class=" text-box"
+                                 style="width: 100%; height: 100%; display: inline-flex; align-items: flex-start;">
+                                 <div style="width: 100%; overflow-x: auto;">
+                                    <div class="" style="position: relative;">
+                                       <h3>Quality Materials:</h3>
+                                       <p> Branded shoes are often made from premium materials, including high-quality leather.
+
+                                          <h3>Craftsmanship:</h3> Branded shoe manufacturers invest in skilled craftsmanship.</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <input type="radio" class="slide-switch" name="elm-7-slide-switch" id="elm-7-tab-1"
+                              value="on">
+                           <ul class="tab-header-container nav nav-tabs"
+                              style="text-align: left; font-size: 14px; line-height: 1.5; border: none; z-index: 0;">
+                              <li class="tab">
+                                 <label for="elm-7-tab-0"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid;">
+                                    <div class="tab-toggle">Payment</div>
+                                 </label>
+                              </li>
+                              <li class="tab">
+                                 <label for="elm-7-tab-1"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; padding-bottom: 1px; cursor: default;">
+                                    <div class="tab-toggle">Shipping</div>
+                                 </label>
+                              </li>
+                              <li class="tab">
+                                 <label for="elm-7-tab-2"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid;">
+                                    <div class="tab-toggle">Returns</div>
+                                 </label>
+                              </li>
+                           </ul>
+                           <ul class="tab-header-container nav nav-tabs hidden-md hidden-lg hidden-sm hidden-xs"
+                              style="text-align: left; font-size: 14px; line-height: 1.5; border: none; z-index: 0;">
+                              <li class="tab">
+                                 <label for="elm-7-tab-0"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid;">
+                                    <div class="tab-toggle"><span style="color: white;">&nbsp;</span><span
+                                          class="fa fa-caret-left"></span><span style="color: white;">&nbsp;</span>
+                                    </div>
+                                 </label>
+                              </li>
+                              <li class="tab" style="flex: 1 1 0%;">
+                                 <label for="elm-7-tab-1"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; padding-bottom: 1px; cursor: default; width: 100%;">
+                                    <div class="tab-toggle">Shipping</div>
+                                 </label>
+                              </li>
+                              <li class="tab">
+                                 <label for="elm-7-tab-2"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid;">
+                                    <div class="tab-toggle"><span style="color: white;">&nbsp;</span><span
+                                          class="fa fa-caret-right"></span><span style="color: white;">&nbsp;</span>
+                                    </div>
+                                 </label>
+                              </li>
+                           </ul>
+                           <ul class="tab-header-container nav nav-tabs"
+                              style="text-align: left; font-size: 14px; line-height: 1.5; border: none; z-index: -2; position: absolute; top: 0px; left: 0px;">
+                              <li class="tab">
+                                 <label for="elm-7-tab-0"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; box-shadow: none;">
+                                    <div class="tab-toggle">Payment</div>
+                                 </label>
+                              </li>
+                              <li class="tab">
+                                 <label for="elm-7-tab-1"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; padding-bottom: 1px; cursor: default; box-shadow: none;">
+                                    <div class="tab-toggle">Shipping</div>
+                                 </label>
+                              </li>
+                              <li class="tab">
+                                 <label for="elm-7-tab-2"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; box-shadow: none;">
+                                    <div class="tab-toggle">Returns</div>
+                                 </label>
+                              </li>
+                           </ul>
+                           <ul class="tab-header-container nav nav-tabs hidden-md hidden-lg hidden-sm hidden-xs"
+                              style="text-align: left; font-size: 14px; line-height: 1.5; border: none; z-index: -2; position: absolute; top: 0px; left: 0px;">
+                              <li class="tab">
+                                 <label for="elm-7-tab-0"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; box-shadow: none;">
+                                    <div class="tab-toggle"><span style="color: white;">&nbsp;</span><span
+                                          class="fa fa-caret-left"></span><span style="color: white;">&nbsp;</span>
+                                    </div>
+                                 </label>
+                              </li>
+                              <li class="tab" style="flex: 1 1 0%;">
+                                 <label for="elm-7-tab-1"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; padding-bottom: 1px; cursor: default; width: 100%; box-shadow: none;">
+                                    <div class="tab-toggle">Shipping</div>
+                                 </label>
+                              </li>
+                              <li class="tab">
+                                 <label for="elm-7-tab-2"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; box-shadow: none;">
+                                    <div class="tab-toggle"><span style="color: white;">&nbsp;</span><span
+                                          class="fa fa-caret-right"></span><span style="color: white;">&nbsp;</span>
+                                    </div>
+                                 </label>
+                              </li>
+                           </ul>
+                           <div class="tab-content"
+                              style="height: 174px; background-color: white; background-image: none; border-color: rgb(221, 221, 221); border-width: 1px; border-style: solid; border-top-left-radius: 0px; top: 0px; box-shadow: none; z-index: -1;">
+                              <div id="elm-7-tab-editor-1" class=" text-box"
+                                 style="width: 100%; height: 100%; display: inline-flex; align-items: flex-start;">
+                                 <div style="width: 100%; overflow-x: auto;">
+                                    <div class="" style="position: relative;">
+                                       <p><h2> Quality Materials:</h2> Branded shoes are often made from premium materials, including high-quality leather, suede, canvas, and synthetic fabrics. These materials are chosen for their durability, comfort, and aesthetic appeal.
+
+                                         <h2> Craftsmanship:</h2> Branded shoe manufacturers invest in skilled craftsmanship, </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <input type="radio" class="slide-switch" name="elm-7-slide-switch" id="elm-7-tab-2"
+                              value="on">
+                           <ul class="tab-header-container nav nav-tabs"
+                              style="text-align: left; font-size: 14px; line-height: 1.5; border: none; z-index: 0;">
+                              <li class="tab">
+                                 <label for="elm-7-tab-0"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid;">
+                                    <div class="tab-toggle">Payment</div>
+                                 </label>
+                              </li>
+                              <li class="tab">
+                                 <label for="elm-7-tab-1"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid;">
+                                    <div class="tab-toggle">Shipping</div>
+                                 </label>
+                              </li>
+                              <li class="tab">
+                                 <label for="elm-7-tab-2"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; padding-bottom: 1px; cursor: default;">
+                                    <div class="tab-toggle">Returns</div>
+                                 </label>
+                              </li>
+                           </ul>
+                           <ul class="tab-header-container nav nav-tabs hidden-md hidden-lg hidden-sm hidden-xs"
+                              style="text-align: left; font-size: 14px; line-height: 1.5; border: none; z-index: 0;">
+                              <li class="tab">
+                                 <label for="elm-7-tab-1"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid;">
+                                    <div class="tab-toggle"><span style="color: white;">&nbsp;</span><span
+                                          class="fa fa-caret-left"></span><span style="color: white;">&nbsp;</span>
+                                    </div>
+                                 </label>
+                              </li>
+                              <li class="tab" style="flex: 1 1 0%;">
+                                 <label for="elm-7-tab-2"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; padding-bottom: 1px; cursor: default; width: 100%;">
+                                    <div class="tab-toggle">Returns</div>
+                                 </label>
+                              </li>
+                           </ul>
+                           <ul class="tab-header-container nav nav-tabs"
+                              style="text-align: left; font-size: 14px; line-height: 1.5; border: none; z-index: -2; position: absolute; top: 0px; left: 0px;">
+                              <li class="tab">
+                                 <label for="elm-7-tab-0"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; box-shadow: none;">
+                                    <div class="tab-toggle">Payment</div>
+                                 </label>
+                              </li>
+                              <li class="tab">
+                                 <label for="elm-7-tab-1"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; box-shadow: none;">
+                                    <div class="tab-toggle">Shipping</div>
+                                 </label>
+                              </li>
+                              <li class="tab">
+                                 <label for="elm-7-tab-2"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; padding-bottom: 1px; cursor: default; box-shadow: none;">
+                                    <div class="tab-toggle">Returns</div>
+                                 </label>
+                              </li>
+                           </ul>
+                           <ul class="tab-header-container nav nav-tabs hidden-md hidden-lg hidden-sm hidden-xs"
+                              style="text-align: left; font-size: 14px; line-height: 1.5; border: none; z-index: -2; position: absolute; top: 0px; left: 0px;">
+                              <li class="tab">
+                                 <label for="elm-7-tab-1"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; box-shadow: none;">
+                                    <div class="tab-toggle"><span style="color: white;">&nbsp;</span><span
+                                          class="fa fa-caret-left"></span><span style="color: white;">&nbsp;</span>
+                                    </div>
+                                 </label>
+                              </li>
+                              <li class="tab" style="flex: 1 1 0%;">
+                                 <label for="elm-7-tab-2"
+                                    style="background-color: white; background-image: none; font-family: Tahoma, Verdana, Geneva, sans-serif; font-weight: normal; font-style: normal; text-decoration: none; border-color: rgb(221, 221, 221); border-width: 1px 1px 0px; border-style: solid; padding-bottom: 1px; cursor: default; width: 100%; box-shadow: none;">
+                                    <div class="tab-toggle">Returns</div>
+                                 </label>
+                              </li>
+                           </ul>
+                           <div class="tab-content"
+                              style="height: 174px; background-color: white; background-image: none; border-color: rgb(221, 221, 221); border-width: 1px; border-style: solid; border-top-left-radius: 0px; top: 0px; box-shadow: none; z-index: -1;">
+                              <div id="elm-7-tab-editor-2" class=" text-box"
+                                 style="width: 100%; height: 100%; display: inline-flex; align-items: flex-start;">
+                                 <div style="width: 100%; overflow-x: auto;">
+                                    <div class="" style="position: relative;">
+                                       <p> <h2>Quality Materials:</h2> Branded shoes are often made from premium materials, including high-quality leather, suede, canvas, and synthetic fabrics. These materials are chosen for their durability, comfort, and aesthetic appeal.
+
+                                          <h2>Craftsmanship:</h2> Branded shoe manufacturers invest in skilled craftsmanship, </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row"
+                     style="height: auto; padding: 0px; font-size: 14px; box-shadow: none; font-style: normal; text-align: left; font-family: &quot;Open Sans&quot;, sans-serif; font-weight: normal; text-decoration: none; background-color: rgb(255, 255, 255); background-image: none;">
+                     <div id="Column_8" class="col col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 ">
+                        <div id="elm-15" class="template-element     hidden-xs" data-element="crossSell"
+                           style="z-index: 16; top: 0px; left: 0px; width: 100%; height: auto; padding: 0px; font-size: 14px; position: relative; box-shadow: none; font-style: normal; text-align: left; font-family: &quot;Open Sans&quot;, sans-serif; font-weight: normal; border-radius: 4px; text-decoration: none; background-color: rgb(241, 241, 241); background-image: none;">
+                           <div class="container-fluid cross-sell sample"
+                              style="padding-top: 5px; padding-bottom: 5px;">
+                              <div style="font-size: 120%; margin-bottom: 5px;">Check our other products</div>
+                              <div class="row">
+                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <div class="cross-sell-item-card"
+                                       style="margin-top: 0px; margin-left: 0px; margin-right: 0px;">
+                                       <a href="http://www.ebay.com" target="_blank"
+                                          style="color: inherit; text-decoration: none;">
+                                          <div class="cross-sell-image-box"
+                                             style="width: 100%; height: 180px; text-align: center;"><span
+                                                class="image-helper"></span><img
+                                                src="https://i.frog.ink/2kwwmFmr/s-l1600.jpg"></div>
+                                          <div>
+                                             <div class="cross-sell-item-title" title="Sample product 1">Sample product
+                                                1</div>
+                                             <div class="cross-sell-item-price">$1.00</div>
+                                          </div>
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <div class="cross-sell-item-card"
+                                       style="margin-top: 0px; margin-left: 0px; margin-right: 0px;">
+                                       <a href="http://www.ebay.com" target="_blank"
+                                          style="color: inherit; text-decoration: none;">
+                                          <div class="cross-sell-image-box"
+                                             style="width: 100%; height: 180px; text-align: center;"><span
+                                                class="image-helper"></span><img
+                                                src="https://i.frog.ink/zOggGVUJ/s-l500.jpg"></div>
+                                          <div>
+                                             <div class="cross-sell-item-title" title="Sample product 2">Sample product
+                                                2</div>
+                                             <div class="cross-sell-item-price">$2.00</div>
+                                          </div>
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <div class="cross-sell-item-card"
+                                       style="margin-top: 0px; margin-left: 0px; margin-right: 0px;">
+                                       <a href="http://www.ebay.com" target="_blank"
+                                          style="color: inherit; text-decoration: none;">
+                                          <div class="cross-sell-image-box"
+                                             style="width: 100%; height: 180px; text-align: center;"><span
+                                                class="image-helper"></span><img
+                                                src="https://i.frog.ink/SzokXLcX/s-l500-2.jpg"></div>
+                                          <div>
+                                             <div class="cross-sell-item-title" title="Sample product 3">Sample product
+                                                3</div>
+                                             <div class="cross-sell-item-price">$3.00</div>
+                                          </div>
+                                       </a>
+                                    </div>
+                                 </div>
+                                 <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                                    <div class="cross-sell-item-card"
+                                       style="margin-top: 0px; margin-left: 0px; margin-right: 0px;">
+                                       <a href="http://www.ebay.com" target="_blank"
+                                          style="color: inherit; text-decoration: none;">
+                                          <div class="cross-sell-image-box"
+                                             style="width: 100%; height: 180px; text-align: center;"><span
+                                                class="image-helper"></span><img
+                                                src="https://i.frog.ink/xdZpkkHo/s-l500-1.jpg"></div>
+                                          <div>
+                                             <div class="cross-sell-item-title" title="Sample product 4">Sample product
+                                                4</div>
+                                             <div class="cross-sell-item-price">$4.00</div>
+                                          </div>
+                                       </a>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>

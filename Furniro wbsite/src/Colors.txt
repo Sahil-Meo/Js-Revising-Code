@@ -1,0 +1,11 @@
+| Role                  | Color Preview                                                   | Name (Custom)     | Hex Code  | Tailwind Example (Custom) |
+| --------------------- | --------------------------------------------------------------- | ----------------- | --------- | ------------------------- |
+| **Primary**           | ![#C98C42](https://via.placeholder.com/20/C98C42/000000?text=+) | Golden Bronze     | `#C98C42` | `primary: '#C98C42'`      |
+| **Text (Heading)**    | ![#1F1F1F](https://via.placeholder.com/20/1F1F1F/000000?text=+) | Charcoal Black    | `#1F1F1F` | `heading: '#1F1F1F'`      |
+| **Text (Paragraph)**  | ![#555555](https://via.placeholder.com/20/555555/000000?text=+) | Dim Gray          | `#555555` | `text: '#555555'`         |
+| **Accent Beige**      | ![#FDF2E9](https://via.placeholder.com/20/FDF2E9/000000?text=+) | Light Beige       | `#FDF2E9` | `accent: '#FDF2E9'`       |
+| **Soft White**        | ![#FFFFFF](https://via.placeholder.com/20/FFFFFF/000000?text=+) | Pure White        | `#FFFFFF` | `background: '#FFFFFF'`   |
+| **Light Gray**        | ![#F6F6F6](https://via.placeholder.com/20/F6F6F6/000000?text=+) | Mist Gray         | `#F6F6F6` | `muted: '#F6F6F6'`        |
+| **CTA Button**        | ![#A26F2A](https://via.placeholder.com/20/A26F2A/000000?text=+) | Rich Brown        | `#A26F2A` | `cta: '#A26F2A'`          |
+| **Badge Red**         | ![#E63946](https://via.placeholder.com/20/E63946/000000?text=+) | Alert Red         | `#E63946` | `danger: '#E63946'`       |
+| **Muted Card Shadow** | ![#E0E0E0](https://via.placeholder.com/20/E0E0E0/000000?text=+) | Light Border Gray | `#E0E0E0` | `border: '#E0E0E0'`       |

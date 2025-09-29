@@ -1,0 +1,211 @@
+<div id="ds_div">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+       html{height:100%;font-size:24px}
+       body{padding:0;margin:0;z-index:1;width:100%;background:#363636 url(image/pasted image 0.png) repeat top left}
+       img{border:none;}
+       a {outline:0;text-decoration:none !important}
+       label{margin: 0;}
+       .crb{clear:both;}
+       .header{background: #fff;}
+       .logo{padding: .25rem;}
+       .logo img{max-height:80px;max-width:280px;}
+       .center_container{margin:.5rem 0;padding:0 .25rem;background: #fff;border-radius: .25rem;}
+       .container{background:#fff;  }
+       /* --------------   banner STYLE --------------  */
+       .banner{width:100%;}
+       .banner input{display: none;}
+       .banner .bigPic{width:100%;height:25rem;}
+       .banner .bigPic div{width:100%;background:#fff;text-align:center;transition:all linear 500ms;-o-transition:all linear 500ms;-moz-transition:all linear 500ms;-webkit-transition:all linear 500ms;height:25rem;display: none;}
+       .banner .bigPic div img{height:100%;max-width:100%;}
+       .banner .sliderPic{width:100%;background-color:#363636;height:3.7rem;overflow-y: auto;}
+       .banner .sliderPic label {padding:.5rem;float:left;cursor:pointer;}
+       .banner .sliderPic label img{max-width:5rem;height:2.5rem;opacity:.8; }
+       #tongtool-img-rdi-1:checked ~ .bigPic #tongtool-img-1{display:block;}
+       #tongtool-img-rdi-1:checked ~ .sliderPic #tongtool-img-slider-1 img{border:2px solid #f00;opacity:1;}
+       #tongtool-img-rdi-2:checked ~ .bigPic #tongtool-img-2{display:block;}
+       #tongtool-img-rdi-2:checked ~ .sliderPic #tongtool-img-slider-2 img{border:2px solid #f00;opacity:1;}
+       #tongtool-img-rdi-3:checked ~ .bigPic #tongtool-img-3{display:block;}
+       #tongtool-img-rdi-3:checked ~ .sliderPic #tongtool-img-slider-3 img{border:2px solid #f00;opacity:1;}
+       #tongtool-img-rdi-4:checked ~ .bigPic #tongtool-img-4{display:block;}
+       #tongtool-img-rdi-4:checked ~ .sliderPic #tongtool-img-slider-4 img{border:2px solid #f00;opacity:1;}
+       #tongtool-img-rdi-5:checked ~ .bigPic #tongtool-img-5{display:block;}
+       #tongtool-img-rdi-5:checked ~ .sliderPic #tongtool-img-slider-5 img{border:2px solid #f00;opacity:1;}
+       .flatBigPic{margin:0 auto;width:100%;text-align: center;display: none;}
+       /* --------------   description STYLE --------------  */
+       .box{padding:0;margin-top:.5rem;}
+       .titlebar{background:#363636;color:#fff;height:1.5rem;line-height:1.5rem;padding:0 .6rem;font-size:.83rem}
+       .content{word-wrap:break-word;padding:.25rem;font-size:0.6rem;clear:both;}
+       /* --------------   context STYLE --------------  */
+       .tab_container{width:100%;word-break:break-word;}
+       .tab_container input{display: none;}
+       .tab_container .tab{width:100%;height:1.44rem;border-bottom:solid 2px #363636;}
+       .tab_container .tab ul{width:100%;list-style:none;margin:0;padding:0;}
+       .tab_container .tab ul li{position:relative;bottom:2px;float:left;height:1.44rem;line-height:1.5rem;cursor:pointer;margin-right:4px;background:#363636;color:#fff;font-size:.7rem;}
+       .tab_container .tab ul li label{display:block;padding:0 1rem;cursor:pointer;}
+       .tab_container .tab_content{width: 100%;}	
+       .tab_container .tab_content #tongtool-tab-1{width: 100%;padding: .25rem;font-size:0.6rem;display:none;}
+       #tongtool-tab-rdi-1:checked ~ .tab ul #tongtool-tab-li-1{background:#ccc;color:#363636;}
+       #tongtool-tab-rdi-1:checked ~ .tab_content #tongtool-tab-1{display:block;}
+       .tab1{display:none;}
+       /* --------------   footer STYLE --------------  */
+       .footer{padding:.8rem 0 1rem 0;border-top:solid 2px #363636;}
+       .footer .copyright{text-align:center;font-size:.8em;}
+       /* --------------   fix mobile STYLE --------------  */
+       @media screen and (max-width: 960px){
+       html{font-size: 12px}
+       .container{padding:0}
+       .nav{display:none;}
+       .nav .row div{padding:0 ;border:0}
+       .nav .row div.col-xs-2{width: 33.33333%}
+       .titlebar{font-size:1rem;}
+       .content{word-wrap:break-word;font-size:1rem;}
+       .tab,.tab_content{display: none}
+       .tab1{display: block}
+       .banner{display:none;}
+       .flatBigPic{display:block;}
+       .flatBigPic ul{display: inline-block;list-style:none;margin:0;padding:0;}
+       .flatBigPic li{display: inline-block;width:98%;margin:.25rem 0 0 0;}
+       .flatBigPic li div{text-align:center;width:100%;}
+       .flatBigPic li img{max-width:100%;max-height:480px;}
+       .specialRelate .tongtool-related ul li{width:50%!important;border:0;}
+       .specialRelate .tongtool-related ul li:hover{border:0;}
+       }
+       .tongtool-related .title{color:#fff;}
+       .tongtool-related .price b{color: #fff;}
+       .tongtool-related .shipping{color:#ddd;}
+       .clear{font-size:0; content:" "; clear:both; height:0; zoom:1; overflow:hidden}
+       .specialRelate .tongtool-related{margin:0;padding:0;width:100%;}
+       .specialRelate .tongtool-related ul{width:100%;list-style-type:none;padding:0px;margin:0px auto;}
+       .specialRelate .tongtool-related ul li{padding:0px; margin:0px; float:left;list-style-type:none;position:relative;}
+       .specialRelate .tongtool-related ul li a{margin:5px;float:left;text-decoration:none;}
+       .specialRelate .tongtool-related .pic{display:table-cell; vertical-align:middle; text-align:center; overflow:hidden;border:solid 0px #fff;}
+       .specialRelate .tongtool-related .pic img{width:100%;}
+       .specialRelate .tongtool-related .item{margin:2px;border:solid 1px #ccc}
+       .specialRelate .tongtool-related p{padding:0px;margin:0px;}
+       .specialRelate .tongtool-related .title{word-break:break-word;font-size:12px;line-height:13px;height:27px;overflow: hidden;text-align: left;text-decoration: none;width:96%;word-wrap: break-word;margin:5px 0;}
+       .specialRelate .tongtool-related .title a{text-decoration: none;color:#333;}
+       .specialRelate .tongtool-related ul li:hover .title a{text-decoration:underline;color:#111; }
+       .specialRelate .tongtool-related .price{color:#666;font-family: Arial;font-size: 11px;font-weight: normal;height:29px;line-height:14px;text-align: left;}
+       .specialRelate .tongtool-related .price b{color:red;cursor: pointer;font-size: 13px;font-weight: bold;}
+       .specialRelate .tongtool-related .price span{color: #777777;cursor: pointer;font-size: 12px;font-weight: normal;text-decoration: line-through;}
+       .specialRelate .tongtool-related .shipping{color:#666;font-family: Verdana,sans-serif !important;font-size: 11px;font-weight: normal;line-height: 13px;min-height: 13px;text-align: left;}
+       .tongtool-tag-off{ width:50px;height:50px; background:url(https://img1.tongtool.com/v/template/img/tag-off.gif) no-repeat; position:absolute; top:-4px;left:2px; z-index:99; text-align:center; color:#fff; font-size:0.875em; }
+       .tongtool-tag-off span{display:inline-block; margin-top:5px; line-height:15px;}
+    </style>
+    <div class="container windowImage">
+       <div class="center_container">
+          <div class="header">
+          </div>
+          <div class="banner">
+             <input type="radio" id="tongtool-img-rdi-1" name="img-rdi" checked="checked">
+             <input type="radio" id="tongtool-img-rdi-2" name="img-rdi">
+             <input type="radio" id="tongtool-img-rdi-3" name="img-rdi">
+             <input type="radio" id="tongtool-img-rdi-4" name="img-rdi">
+             <input type="radio" id="tongtool-img-rdi-5" name="img-rdi">
+             <div class="bigPic">
+                <div id="tongtool-img-1"><img src="imegs/12_86428_378601.jpg"></div>
+                <div id="tongtool-img-2"><img src="imegs/12_86428_378602.jpg"></div>
+                <div id="tongtool-img-3"><img src="imegs/12_86428_378600.jpg"></div>
+                <div id="tongtool-img-4"><img src="imegs/12_86428_378599.jpg"></div>
+                <div id="tongtool-img-5"><img src="imegs/12_86428_378598.jpg"></div>
+             </div>
+             <div class="sliderPic">https://secure5.ksb.net/HotEnergy/productImage/2022_12/12_86428
+                <label id="tongtool-img-slider-1" for="tongtool-img-rdi-1"><img src="imegs/12_86428_378601.jpg"></label>
+                <label id="tongtool-img-slider-2" for="tongtool-img-rdi-2"><img src="imegs/12_86428_378602.jpg"></label>
+                <label id="tongtool-img-slider-3" for="tongtool-img-rdi-3"><img src="himegs/12_86428_378600.jpg"></label>
+                <label id="tongtool-img-slider-4" for="tongtool-img-rdi-4"><img src="imegs/12_86428_378599.jpg"></label>
+                <label id="tongtool-img-slider-5" for="tongtool-img-rdi-5"><img src="imegs/12_86428_378598.jpg"></label>
+             </div>
+             <div class="crb"></div>
+          </div>
+          <div class="flatBigPic">
+             <ul>
+                <li>
+                   <div><img src="https://secure5.ksb.net/HotEnergy/productImage/2022_12/12_86428_378601.jpg"></div>
+                </li>
+                <li>
+                   <div><img src="https://secure5.ksb.net/HotEnergy/productImage/2022_12/12_86428_378602.jpg"></div>
+                </li>
+                <li>
+                   <div><img src="https://secure5.ksb.net/HotEnergy/productImage/2022_12/12_86428_378600.jpg"></div>
+                </li>
+                <li>
+                   <div><img src="https://secure5.ksb.net/HotEnergy/productImage/2022_12/12_86428_378599.jpg"></div>
+                </li>
+                <li>
+                   <div><img src="https://secure5.ksb.net/HotEnergy/productImage/2022_12/12_86428_378598.jpg"></div>
+                </li>
+             </ul>
+          </div>
+          <div class="box">
+             <div class="titlebar">Product Description</div>
+             <div class="content">
+                <span>
+                   <p>1. Made of high-quality materials, durable and practical</p>
+                   <p>2. It is applicable to all kinds of automobiles, with light weight, wear resistance, dust prevention and scratch resistance, and protects the handrails from damage, overflow, wear and dirt.</p>
+                   <p>4. Soft, comfortable and durable, with rubber band and chemical resistant rubber.</p>
+                   <p>5. Anti slip, no trace left after removal * The installation will not harm the car.</p>
+                   <p>6. Waterproof design. Environmentally friendly and tasteless.</p>
+                   <p>7. It is applicable to all kinds of automobiles.</p>
+                   <p>standard:</p>
+                   <p>Type: car armrest pad</p>
+                   <p>Material: leather</p>
+                   <p>Color: black</p>
+                   <p>Size: 31.7 * 18.5cm/12.48 * 7.28inch</p>
+                   <p>Package includes:</p>
+                   <p>1x car armrest pad</p>
+                   <p>note</p>
+                   <p>1. Due to different colors displayed on the computer, the actual color may be slightly different from the above picture.</p>
+                   <p>2. Please allow 1-3 cm difference due to manual measurement.</p>
+                   <p>If there is any difference, please contact us before purchasing. Thank you for your understanding.</p>
+                </span>
+             </div>
+          </div>
+          <div class="box">
+             <div class="tab_container">
+                <input type="radio" id="tongtool-tab-rdi-1" name="tab-rdi" checked="checked">
+                <div class="tab">
+                   <ul>
+                      <li id="tongtool-tab-li-1"><label for="tongtool-tab-rdi-1">About Us</label></li>
+                   </ul>
+                </div>
+                <div class="crb"></div>
+                <div class="tab_content">
+                   <div id="tongtool-tab-1">
+                      <p>Once we have received cleared full payment, your items will be dispatched in 1-3 days.</p>
+                      <div id="tdiv2" class="weeds">
+                         <p>It normally takes :</p>
+                         <p><strong>7-14 business days</strong>&nbsp;for US, UK, Canada, Australia, Asian countries.<br><strong>14-21 business days</strong>&nbsp;for Spain, German, Middle East countries.<br><strong>18-25 business days</strong>&nbsp;for Russia, Brazil, Italy, France, European countries.<br><strong>24-32 business days</strong>&nbsp;for South American countries.</p>
+                         <p>We send items by air mail to the buyer without track number. There maybe some delay due to flight, holiday, weather, local post, local natural disaster impact. if your shipment delays, we hope you can be patient, and at the same time contact us, we will try our best to help you.</p>
+                         <p>Import duties, taxes and charges are not included in the item price or shipping charges. These charges are the buyer's responsibility.<br>Please check with your country's customs office to determine what these additional costs will be prior to bidding / buying.</p>
+                      </div>
+                      <p><br style="white-space: normal;"></p>
+                      <div class="crb"></div>
+                   </div>
+                </div>
+             </div>
+             <div class="tab1">
+                <div class="titlebar">About Us</div>
+                <div class="content">
+                   <p>Once we have received cleared full payment, your items will be dispatched in 1-3 days.</p>
+                   <div id="tdiv2" class="weeds">
+                      <p>It normally takes :</p>
+                      <p><strong>7-14 business days</strong>&nbsp;for US, UK, Canada, Australia, Asian countries.<br><strong>14-21 business days</strong>&nbsp;for Spain, German, Middle East countries.<br><strong>18-25 business days</strong>&nbsp;for Russia, Brazil, Italy, France, European countries.<br><strong>24-32 business days</strong>&nbsp;for South American countries.</p>
+                      <p>We send items by air mail to the buyer without track number. There maybe some delay due to flight, holiday, weather, local post, local natural disaster impact. if your shipment delays, we hope you can be patient, and at the same time contact us, we will try our best to help you.</p>
+                      <p>Import duties, taxes and charges are not included in the item price or shipping charges. These charges are the buyer's responsibility.<br>Please check with your country's customs office to determine what these additional costs will be prior to bidding / buying.</p>
+                   </div>
+                   <p><br style="white-space: normal;"></p>
+                   <div class="crb"></div>
+                </div>
+             </div>
+          </div>
+          <div class="box specialRelate">
+          </div>
+       </div>
+    </div>
+    <div class="footer">
+       <div class="copyright">powered by <img alt="tongtool" src="https://img1.tongtool.com/v/template/img/tongtool-logo.png"></div>
+    </div>
+ </div>

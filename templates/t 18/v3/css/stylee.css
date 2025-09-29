@@ -1,0 +1,1072 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+/*theme #8fba1e color*/
+body {
+	
+	font-family: 'Khand', sans-serif;
+	font-weight: 500;
+}
+.container {
+	/*background: #fff none repeat scroll 0 0;*/
+	margin: 0 auto;
+	width: 977px;
+	background:#fdeeeb;
+	box-shadow: 0px 1px 5px #999999;
+}
+
+.hks-logo{
+    margin-left: 16px;
+    margin-bottom: 13px;
+    width: 101px;
+    margin-top: 11px;
+   }
+   
+.hks-persent
+{
+	width:60%;
+}
+.fix {
+	overflow: hidden;
+}
+.floatleft {
+	float: left;
+}
+.floatright {
+	float: right;
+}
+.header_logo {
+	width: 390px;
+}
+.left-sidebar {
+	margin-left: 10px;
+	margin-right: 10px;
+	width: 227px;
+}
+.store-catagory {
+	border: 1px solid #d6d6d6;
+	margin-bottom: 10px;
+}
+.sidebar-heading {
+	background: #e07883 none repeat scroll 0 0;
+	color: #fff;
+	font-family: 'Khand', sans-serif;
+	font-size: 16px;
+	padding: 10px 0;
+	text-align: center;
+	text-transform: uppercase;
+}
+.sing-up-text h1 {
+	font-size: 34px;
+	font-weight: normal;
+	letter-spacing: 0px;
+	line-height: 48px;
+	margin: 0;
+	text-align: left;
+	text-transform: uppercase;
+}
+.sing-up-text p {
+	color: #555;
+	font-size: 13px;
+	margin-bottom: 5px;
+	text-align: left;
+}
+.sing-up-text span {
+	color: #666;
+	margin-top: 8px;
+}
+.sign-up-img {
+	margin-top: 48px;
+	width: 62px;
+}
+.sign-up-img img {
+	width: 100%;
+}
+.sing-up-text {
+	padding: 20px 0 20px 10px;
+	width: 60%;
+}
+.store-catagory.payple {
+	padding: 25px 0;
+	background:white;
+	text-align: center;
+}
+.store-catagory ul {
+	list-style: outside none none;
+	margin: 0;
+	padding: 10px;
+}
+.store-catagory ul li a {
+	color: #5e5e5e;
+	display: block;
+	padding: 7px 0;
+	text-decoration: none;
+}
+.header_middle {
+	text-align: center;
+	width: 195px;
+}
+.header_right {
+	/*padding-top: 26px;*/
+	width: 390px;
+}
+.slider img {
+	width: 100%;
+}
+.social_link span {
+	float: left;
+	font-size: 12px;
+	font-weight: bold;
+	margin-right: 5px;
+	margin-top: 11px;
+}
+.single_shoping_protfolio {
+	border: 1px solid #d6d6d6;
+	margin: 10px;
+	padding: 5px 5px 3px;
+	position: relative;
+	width: 212px;
+}
+.some_text h2 {
+	font-family: 'Khand', sans-serif !important;
+	color: #444;
+	font-size: 17px;
+	font-weight: normal;
+}
+.social_link {
+	float: right;
+	padding-right: 10px;
+	padding-top: 18px;
+}
+.sungle_shoping_protfolio {
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	text-align: center;
+}
+.single_text h2 {
+	color: #fff;
+	font-family: 'Khand', sans-serif !important;
+	font-size: 19px;
+	padding: 4px;
+	position: relative;
+	text-transform: uppercase;
+	z-index: 9;
+}
+.single_text {
+	margin: 43px 0 0;
+	font-family: 'Khand', sans-serif !important;
+	padding: 5px;
+}
+.single_text h2::after {
+	background: #000 none repeat scroll 0 0;
+	font-family: 'Khand', sans-serif !important;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -9;
+}
+.single_text h2::after {
+	background: #000 none repeat scroll 0 0;
+	font-family: 'Khand', sans-serif !important;
+	content: "";
+	height: 100%;
+	left: 0;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -9;
+}
+.single_text p {
+background: #e07883 none repeat scroll 0 0;
+font-family: 'Khand', sans-serif !important;
+border: 1px solid #d6d6d6;
+color: #fff;
+font-size: 14px;
+font-weight: bold;
+margin: 13px auto;
+opacity: 0.7;
+padding: 3px 2px;
+text-align: center;
+text-transform: uppercase;
+width: 175px;
+z-index: 999;
+}
+.single_title_bar {
+	background: #e07883 none repeat scroll 0 0;
+	font-family: 'Khand', sans-serif !important;
+	color: #fff;
+	padding: 10px;
+}
+.single_title_bar h2 {
+	font-family: 'Khand', sans-serif !important;
+	font-size: 16px;
+	text-transform: uppercase;
+}
+.bar_desc {
+	padding: 15px 0;
+	font-family: 'Khand', sans-serif;
+	font
+}
+.bar_desc p {
+	color: #444444;
+	font-family: 'Khand', sans-serif;
+	font-size:16px;
+	letter-spacing:0.03em;
+	font-weight:400;
+	text-align: left;
+	line-height: 24px;
+}
+.title_desc_area {
+	padding: 0 10px;
+	font-family: 'Khand', sans-serif !important;
+}
+.bar_desc ul {
+	color: #7b7b7b;
+	padding: 0 21px;
+}
+.single_contain img {
+	width: 100%;
+	font-family: 'Khand', sans-serif !important;
+}
+.single_contain {
+	border: 1px solid #fff;
+	margin-left: 10px;
+	padding: 10px;
+	width: 28.6%;
+	font-family: 'Khand', sans-serif !important;
+}
+.single_contain:hover {
+	border: 1px solid #bf392b;
+	cursor: pointer;
+	transition: all 0.2s ease-in-out 0s;
+	font-family: 'Khand', sans-serif !important;
+}
+.single_contain:nth-child(4) {
+	margin-right: 0;
+	font-family: 'Khand', sans-serif !important;
+}
+.main_contain h2 {
+	color: #303030;
+	font-size: 18px;
+	font-weight: normal;
+	padding: 20px 10px;
+	font-family: 'Khand', sans-serif !important;
+}
+.footer {
+	background: #e07883 none repeat scroll 0 0;
+	color: #fff;
+	margin-top: 0;
+	font-family: 'Khand', sans-serif !important;
+}
+.footer_menu_single h2 {
+	border-bottom: 1px dotted #fff;
+	margin-right: 67px;
+	font-family: 'Khand', sans-serif !important;
+}
+.footer_menu_title {
+	border-bottom: 1px dotted #fff;
+	font-family: 'Khand', sans-serif !important;
+}
+.footer_menu_title h2 {
+	font-size: 15px;
+	margin-right: 39px;
+	padding: 10px;
+	text-transform: uppercase;
+	font-family: 'Khand', sans-serif !important;
+}
+.footer_menu_single ul {
+	list-style: outside none none;
+	font-family: 'Khand', sans-serif !important;
+	margin: 0;
+	padding: 0;
+}
+.footer_menu_single ul li a {
+	color: #fff;
+	font-family: 'Khand', sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+.footer_menu_single {
+	margin-right: 0;
+	padding: 10px;
+	font-family: 'Khand', sans-serif !important;
+	width: 20%;
+}
+.footer_menu_single.middle {
+	width: 105px;
+}
+.footer_logo {
+	margin-left: 62px;
+	padding: 20px 0;
+	width: 181px;
+}
+.payment {
+	padding: 47px 0;
+}
+.payment h2 {
+	font-size: 14px;
+	font-weight: normal;
+	margin-bottom: 15px;
+	text-transform: uppercase;
+	font-family: 'Khand', sans-serif !important;
+}
+.tab_container {
+	margin: 0 auto;
+	padding-top: 70px;
+	position: relative;
+	font-family: 'Khand', sans-serif !important;
+}
+input.my_tab, .tab_container section {
+	clear: both;
+	display: none;
+	font-size: 1.2em;
+	padding: 20px;
+	text-align: left;
+	font-family: 'Khand', sans-serif !important;
+}
+.tab_container [id^="tab"]:checked + label.my_tab_label {
+	background: #4fc7e6 none repeat scroll 0 0;
+	font-family: 'Khand', sans-serif !important;
+}
+label.my_tab_label {
+	background-color:#e07883;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	float: left;
+	font-family: 'Khand', sans-serif;
+	font-size: 13px;
+	font-weight: bold;
+	height: 30px;
+	padding-top: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: all 0.1s ease-in-out 0s;
+	width: 120px;
+}
+.tab_container [id^="tab"]:checked + label.my_tab_label span {
+	background-color: #4fc7e6;
+	border-image: none;
+	color: #fff;
+	display: inline-block;
+	font-family: 'Khand', sans-serif;
+	height: 30px;
+	padding-top: 0;
+	position: relative;
+	text-align: center;
+	text-transform: uppercase;
+	width: 118px;
+	z-index: 2;
+}
+#tab1:checked ~ #content1, #tab2:checked ~ #content2, #tab3:checked ~ #content3, #tab4:checked ~ #content4, #tab5:checked ~ #content5 {
+	border: 1px solid #999999;
+	color: #555555;
+	display: block;
+	font: 16px/1.5 Lato;
+	margin: 0;
+	overflow: hidden;
+	text-align: left;
+	font-family: 'Khand', sans-serif !important;
+}
+.tab_container section div {
+	color: #444444;
+	font-family: 'Khand', sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 18pt;
+	padding: 5px;
+}
+.tab_container .tab-content p, .tab_container .tab-content h3 {
+	animation: 0.7s ease-in-out 0s normal none 1 running fadeInScale;
+}
+.tab_box_text {
+	color: #444444;
+	font-family: 'Khand', sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 18pt;
+	padding: 5px;
+}
+.tab_box_text {
+	color: #fff;
+	font-family: 'Khand', sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 18pt;
+	padding: 5px;
+}
+.description {
+	font-size: 15px !important;
+	line-height: 18pt;
+	padding-bottom: 15px;
+}
+input.my_tab, .tab_container section {
+	clear: both;
+	display: none;
+	font-size: 1.2em;
+	padding: 20px;
+	text-align: left;
+}
+input.my_tab, .tab_container section {
+	clear: both;
+	display: none;
+	font-size: 1.2em;
+	padding: 20px;
+	text-align: left;
+}
+.tab_container {
+	margin: 0 auto;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	position: relative;
+}
+.tab-content p {
+	text-align: left;
+}
+.single_shoping_protfolio img {
+	width: 212px;
+}
+label.my_tab_label:hover {
+	background: #4fc7e6 none repeat scroll 0 0;
+}
+.main_menu img {
+	cursor: pointer;
+}
+.single_text:hover h2 {
+	background: #e07883;
+	transition: .5s
+}
+hr.border {
+	border-bottom: 1px dotted #fff;
+	padding-top: 12px;
+}
+.single_contain h3 {
+	color: #666;
+	font-size: 16px;
+	font-weight: normal;
+	text-align: center;
+	text-transform: uppercase;
+}
+.tab-content {
+	background: #fff none repeat scroll 0 0;
+	color:#333;
+}
+.tab-content p {
+	
+	color:#333;
+}
+/*slider**/
+
+     
+
+
+
+
+
+.container_s {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: #856036 #5d4426;
+	border-image: none;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	width: 977px;
+}
+.container_s img {
+	width: 100%;
+}
+.photo {
+	position: absolute;
+	animation: round 16s infinite;
+	opacity: 0;
+}
+ @keyframes round {
+ 25% {
+ opacity: 1;
+}
+ 40% {
+ opacity: 0;
+}
+}
+img:nth-child(1) {
+	animation-delay: 12s;
+}
+img:nth-child(2) {
+	animation-delay: 8s;
+}
+img:nth-child(3) {
+	animation-delay: 4s;
+}
+img:nth-child(4) {
+	animation-delay: 0s;
+}
+h1 {
+	font-size: 50px;
+	text-align: center;
+	color: #444;
+}
+h3 {
+	font-size: 30px;
+	line-height: 34px;
+	text-align: center;
+	color: #FFF;
+}
+h3 a {
+	color: #FFF;
+}
+a {
+	color: #FFF;
+}
+h1 {
+	/*margin-top: 100px;*/
+	text-align: center;
+	font-size: 40px;
+	line-height: 50px;
+	padding:20px;
+	font-family: 'Khand', sans-serif;
+}
+#container {
+	margin: 0 auto;
+	max-width: 890px;
+}
+p {
+	text-align: center;
+}
+ .toggle,  [id^=drop] {
+ display: none;
+}
+/* Giving a background-color to the nav container. */
+
+nav {
+	margin: 0;
+	padding: 0;
+	background-color: #e07883;
+	text-transform:uppercase;
+	font-weight:bold;
+	font-family: 'Khand', sans-serif;
+}
+#logo {
+	display: block;
+	padding: 0 30px;
+	float: left;
+	font-size: 20px;
+	line-height: 60px;
+}
+/* Since we'll have the "ul li" "float:left"
+
+ * we need to add a clear after the container. */
+
+
+
+nav:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/* Removing padding, margin and "list-style" from the "ul",
+
+ * and adding "position:reltive" */
+
+nav ul {
+	float: left;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	position: relative;
+}
+/* Positioning the navigation items inline */
+
+nav ul li {
+	margin: 0px;
+	display: inline-block;
+	float: left;
+	background-color: #e07883;
+}
+/* Styling the links */
+
+nav a {
+	display: block;
+	padding: 14px 48px;
+	color: #FFF;
+	font-size: 17px;
+	text-decoration: none;
+}
+nav ul li ul li:hover {
+	background: #4fc7e6;
+}
+/* Background color change on Hover */
+
+nav a:hover {
+	background-color: #4fc7e6;
+}
+/* Hide Dropdowns by Default
+
+ * and giving it a position of absolute */
+
+nav ul ul {
+	display: none;
+	position: absolute;
+	/* has to be the same number as the "line-height" of "nav a" */
+
+	top: 60px;
+}
+/* Display Dropdowns on Hover */
+
+nav ul li:hover > ul {
+	display: inherit;
+}
+/* Fisrt Tier Dropdown */
+
+nav ul ul li {
+	width: 170px;
+	float: none;
+	display: list-item;
+	position: relative;
+}
+/* Second, Third and more Tiers	
+
+ * We move the 2nd and 3rd etc tier dropdowns to the left
+
+ * by the amount of the width of the first tier.
+
+*/
+
+nav ul ul ul li {
+	position: relative;
+	top: -60px;
+	/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+	left: 170px;
+}
+/* Change ' +' in order to change the Dropdown symbol */
+
+li > a:after {
+	content: ' +';
+}
+li > a:only-child:after {
+	content: '';
+}
+
+
+
+
+
+/* Media Queries
+
+--------------------------------------------- */
+
+
+
+@media all and (max-width : 768px) {
+
+
+.single_title_bar.fix{
+	margin-top:3%;
+}
+
+
+.footer_menu_title h2 {
+    font-size: 12px;
+    margin-right: 14px;
+    padding: 10px;
+    text-transform: uppercase;
+}	
+.footer_menu_single {
+    margin-right: 0;
+    padding: 5px;
+    width: 100px;
+}
+.single_shoping_protfolio
+{
+	display:none !important;	
+}	
+#logo {
+	display: block;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	float: none;
+}
+nav {
+	margin: 0;
+}
+/* Hide the navigation menu by default */
+
+	/* Also hide the  */
+
+.toggle + a,  .menu {
+	display: none;
+}
+/* Stylinf the toggle lable */
+
+.toggle {
+	background-color: #;
+	border: medium none;
+	color: #fff;
+	display: block;
+	float: right;
+	font-size: 17px;
+	padding: 5px 10px;
+	text-decoration: none;
+}
+.toggle:hover {
+	background-color: #;
+}
+/* Display Dropdown when clicked on Parent Lable */
+
+[id^=drop]:checked + ul {
+	display: block;
+}
+/* Change menu item's width to 100% */
+
+nav ul li {
+	display: block;
+	width: 100%;
+}
+nav ul ul .toggle,  nav ul ul a {
+	padding: 0 40px;
+}
+nav ul ul ul a {
+	padding: 0 80px;
+}
+nav a:hover,  nav ul ul ul a {
+	background-color: #000000;
+}
+nav ul li ul li .toggle,  nav ul ul a,  nav ul ul ul a {
+	padding: 14px 20px;
+	color: #FFF;
+	font-size: 17px;
+}
+nav ul li ul li .toggle,  nav ul ul a {
+	background-color: #212121;
+}
+/* Hide Dropdowns by Default */
+
+nav ul ul {
+	float: none;
+	position: static;
+	color: #ffffff;/* has to be the same number as the "line-height" of "nav a" */
+
+}
+/* Hide menus on hover */
+
+nav ul ul li:hover > ul,  nav ul li:hover > ul {
+	display: none;
+}
+/* Fisrt Tier Dropdown */
+
+nav ul ul li {
+	display: block;
+	width: 100%;
+}
+nav ul ul ul li {
+	position: static;/* has to be the same number as the "width" of "nav ul ul li" */ 
+
+
+
+}
+}
+ @media all and (max-width : 330px) {
+nav ul li {
+	display: block;
+	width: 94%;
+}
+.single_shoping_protfolio
+{
+	display:none !important;	
+}
+
+.single_title_bar.fix.hks{
+	margin-top:3%;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+.container {
+	width: 100%;
+}
+.header_middle {
+	width: 300px;
+}
+.header_right {
+	float: right;
+	width: 300px;
+}
+.header_logo {
+	width: 300px;
+}
+.single_contain {
+	width: 29.6%;
+}
+.single_contain:nth-child(4) {
+	margin-right: 94px;
+}
+.single_shoping_protfolio {
+	box-sizing: border-box;
+	width: 22.9%;
+}
+}
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+body {
+	background: red
+}
+.container {
+	width: 100%
+}
+.single_contain:nth-child(4) {
+	margin-right: 94px;
+}
+.single_contain {
+	width: 42.6%;
+}
+.single_shoping_protfolio {
+	box-sizing: border-box;
+	margin: 9px;
+	width: 22.4%;
+}
+.single_text p {
+	font-size: 14px;
+	width: 171px;
+}
+nav a {
+	padding: 20px 30px;
+}
+.header_right {
+	float: right;
+	width: 250px;
+}
+.header_middle {
+	text-align: center;
+	width: 200px;
+}
+.header_logo {
+	width: 250px;
+}
+.container_s {
+	height: 250px;
+}
+}
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+.container {
+	width: 100%
+}
+.left-sidebar {
+	float: none;
+	width: 100%;
+	display:none;
+}
+nav ul li {
+	display: block;
+	text-align: center;
+	width: 100%;
+}
+.header_logo {
+	text-align: center;
+}
+.header_middle {
+	display:none;
+}
+.header_right {
+	float: none;
+	margin: 0 auto;
+	width: 84%;
+}
+.tab_container [id^="tab"]:checked + label.my_tab_label {
+	border-right: 1px solid #999999;
+	font-family: 'Khand', sans-serif;
+}
+label.my_tab_label::after {
+	bottom: 0;
+	color: #fff;
+	content: "+";
+	font-size: 18px;
+	font-weight: bold;
+	position: absolute;
+	right: 10px;
+	top: 5px;
+}
+.tab_container [id^="tab"]:checked + label.my_tab_label::after {
+	content: "-";
+	z-index: 9999;
+}
+label.my_tab_label {
+	font-family: 'Khand', sans-serif;
+	border-right: 1px solid #999999;
+	box-sizing: border-box;
+	display: block;
+	float: none;
+	overflow: hidden;
+	width: 100%;
+	position: relative;
+	padding: 6px;
+}
+.footer_logo {
+	width: 100%;
+	margin-left: 0;
+}
+.payment {
+	padding: 15px 0;
+}
+nav a {
+	padding: 20px 14px;
+}
+.single_shoping_protfolio {
+	box-sizing: border-box;
+	width: 94%;
+}
+.single_shoping_protfolio img {
+	width: 100%;
+}
+.container_s {
+	height: 150px;
+}
+.container_s img {
+	height: 147px;
+	width: 100%;
+}
+.single_contain {
+	box-sizing: border-box;
+	padding: 10px;
+	width: 93%;
+	font-family: 'Khand', sans-serif;
+}
+.single_contain h3 {
+	font-size: 15px;
+	font-family: 'Khand', sans-serif;
+}
+.social_link {
+	float: none;
+	padding-right: 0;
+	width: 230px;
+}
+.some_text h2 {
+	text-align: center;
+	font-family: 'Khand', sans-serif;
+}
+}
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+body {
+	background: blue;
+}
+.container {
+	width: 100%
+}
+.header_middle {
+	display:none;
+}
+.header_logo {
+	width: 299px;
+}
+.footer_menu_title h2 {
+	font-size: 13px;
+	margin-right: 19px;
+}
+.footer_menu_single {
+	margin-right: 0;
+	padding: 10px;
+	width:78px;
+}
+.footer_menu_single.middle {
+	width: 107px;
+}
+.footer_logo {
+	margin-right: 100px;
+	width: 100%;
+}
+.payment {
+	padding: 45px 0;
+}
+.header_logo {
+	width: 100%;
+}
+.single_contain {
+	box-sizing: border-box;
+	margin: 0;
+	width: 100%;
+}
+.header_right {
+	width: 100%;
+}
+.social_link {
+	float: right;
+	margin: 0 auto;
+	width: 72%;
+}
+.single_shoping_protfolio {
+	box-sizing: border-box;
+	margin: 9px;
+	width: 46%;
+}
+.single_text {
+	margin: 30px 0 0;
+}
+.header {
+	text-align: center;
+}
+.container_s {
+	height: 210px;
+}
+.container_s img {
+	height: 200px;
+	width: 100%;
+}
+.single_text p {
+	width: 195px;
+}
+}
+
+.footer_menu.fix{
+	margin-top:5%;
+}
+.hks-footer{
+	margin-top:20px;
+	float: none;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.hks-section.single_footer.fix.floatleft{
+	width:50%;
+}
+
+@media only screen and (max-width: 600px){
+.hks-section.single_footer.fix.floatleft{
+	width:100%;
+}
+
+}

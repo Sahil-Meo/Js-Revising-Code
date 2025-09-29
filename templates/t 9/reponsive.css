@@ -1,0 +1,107 @@
+/* CSS Document */
+@charset "utf-8";
+.mobile_slider, .mobile_tab, .mobile-tab {
+	display: none;
+}
+.tab_desc > div {
+	text-align: left;
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+/*-----mobile tab html start------*/
+.listing-tab{
+	display:none;
+}
+#org-menu, #LeftPanel, .tag-wrapper, .org-topmenu, .promo-sec, #org-newsletter, .f-col1, .f-col2, .f-col3 {
+  display: none;
+}
+#org-header {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+}
+.top-header, #listingarea {
+  width: 100%;
+}
+#org-footer {
+border-top: 0px solid #4a4a4a;
+     width: 100%;
+    padding: 0px 0 0;
+}
+#org-logo {
+  display: inline-block;
+  float: none;
+  margin: 20px auto;
+  max-width: 100%;
+  width: auto;
+}
+.org-content {
+  margin: 0 auto;
+  padding: 0;
+  text-align: left;
+  width: 90%;
+}
+#org-logo img {
+  max-width: 100%;
+  width: auto;
+}
+.banner {
+  float: left;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  width: auto;
+}
+.banner img{
+	max-width: 100%;
+	width: auto;
+}
+#org-footer .footer-bottom {
+  padding: 20px 0;
+}
+#org-copy, #org-designedby {
+  line-height: 16px;
+  text-align: center;
+  width: 100%;
+}
+.org-listinghead {
+  font-size: 17px;
+  line-height: 19px;
+}
+/*-----mobile tab html END------*/
+.mobile-tab {
+  display: block;
+}
+
+#gallery {
+  padding: 10px;
+}
+#gallery .thumb, #gallery .thumb-bg {
+  height: 35px;
+  width: 35px;
+}
+#gallery .thumb-img {
+  left: -2px;
+  max-height: 35px;
+  max-width: 35px;
+}
+#gallery #slides {
+  width: 100%;
+}
+#gallery #slides div ul li {
+  display: inline-block;
+  float: none;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+#gallery .thumb {
+  margin-bottom: 2px;
+  margin-left: 2px;
+}
+#gallery div.img-wpr, #gallery .big-img-wpr {
+  height: 350px;
+  left: 0;
+  margin: 0 auto 10px;
+  right: 0;
+  top: 15px;
+  width: 90%;
+}
+
+
+}

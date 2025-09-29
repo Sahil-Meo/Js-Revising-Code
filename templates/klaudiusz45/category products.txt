@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Categories</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .featured-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px 0;
+        }
+        .featured-header {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .featured-grid img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .featured-item {
+            position: relative;
+        }
+        .featured-item span {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 5px 10px;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        @media (min-width: 768px) {
+            .featured-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="featured-container">
+        <div class="featured-header">Featured Categories</div>
+        <div class="featured-grid">
+            <div class="featured-item"><img src="https://www.enkahnz.co.uk/ebay/dzinehub_1823/listing/images/cat_01.png" alt="Alloy Wheels"><span>Alloy Wheels</span></div>
+            <div class="featured-item"><img src="https://www.enkahnz.co.uk/ebay/dzinehub_1823/listing/images/cat_01.png" alt="Parts"><span>Parts</span></div>
+            <div class="featured-item"><img src="https://www.enkahnz.co.uk/ebay/dzinehub_1823/listing/images/cat_01.png" alt="Lighting"><span>Lighting</span></div>
+            <div class="featured-item"><img src="https://www.enkahnz.co.uk/ebay/dzinehub_1823/listing/images/cat_01.png" alt="Accessories"><span>Accessories</span></div>
+            <div class="featured-item"><img src="https://www.enkahnz.co.uk/ebay/dzinehub_1823/listing/images/cat_01.png" alt="Bodykits"><span>Bodykits</span></div>
+            <div class="featured-item"><img src="https://www.enkahnz.co.uk/ebay/dzinehub_1823/listing/images/cat_01.png" alt="State of the Art Workshop"><span>State of the Art Workshop</span></div>
+        </div>
+    </div>
+</body>
+</html>

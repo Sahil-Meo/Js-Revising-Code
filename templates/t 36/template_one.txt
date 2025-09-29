@@ -1,0 +1,324 @@
+<html>
+   <head></head>
+   <body>
+      <meta charset="UTF-8">
+      <meta name="description" content="East Lansing Auction eBay Shop">
+      <meta name="keywords" content="Party Supplies,Party Decor,Party Balloons,Mylar Balloons,Foil Balloons">
+      <meta name="author" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <p>
+         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+         <link href="bootstrap.min.css" rel="stylesheet" media="screen">
+         <link href="menu.css" rel="stylesheet" type="text/css">
+         <link href="listing.css" rel="stylesheet" type="text/css">
+         <link href="responsive.css" rel="stylesheet" type="text/css" media="screen">
+      </p>
+      <div class="pst-main">
+         <header id="pst-header ">
+            <div class="top-row visible-desktop">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="contact-link"><a href="#" target="_blank">Welcome To Our Store</a></div>
+                     </div>
+                     <div class="col-md-8 col-sm-8 col-xs-12">
+                        <div class="top-nav">
+                           <ul>
+                              <li><a href="https://www.ebay.co.uk/fdbk/feedback_profile/house_of_focus?filter=feedback_page:All" target="_blank">Our Feedback</a></li>
+                              <!-- <li><a href="#" target="_blank">Favorite Seller </a></li>
+                                 <li><a href="#" target="_blank">Newsletter </a></li> -->
+                              <li><a href="https://contact.ebay.co.uk/ws/eBayISAPI.dll?FindAnswers&requested=houseoffocus" target="_blank">Send Message</a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="pst-clear"></div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4 col-sm-4 col-xs-12" style="
+                     width: 450;">
+                     <div class="pst-logo"><a href="https://www.ebay.co.uk/str/houseoffocus" title="" target="_blank"><img style="margin-top: -5px;" src="https://e-commerceguru.com/clients/house_of_focus/images/logo.png" alt="" class="img-responsive"></a></div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                     <div class="pst-logo"><a title=""><img style="margin-top: -5px;" src="#" alt="" class="img-responsive"></a></div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12">
+                     <div class="pst-logo"><a title=""><img style="margin-top: -5px;" src="#" alt="" class="img-responsive"></a></div>
+                  </div>
+               </div>
+            </div>
+            <!--search-->
+            <div class="pst-clear"></div>
+            <div class="menu-bg">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12 col-sm-12 col-xs-12">
+                        <nav id="menu">
+                           <input id="toggle-nav" type="checkbox"><label id="toggle-nav-label" for="toggle-nav"></label>
+                           <div class="box">
+                              <ul>
+                                 <li><a href="#" target="_blank"><i class="fa fa-home"></i>HOME</a></li>
+                                 <li><a href="https://www.ebay.co.uk/fdbk/feedback_profile/house_of_focus?filter=feedback_page:All" target="_blank">About Us</a></li>
+                                 <!-- <li><a href="#" target="_blank">New Arrivals</a></li>
+                                    <li><a href="#" target="_blank">Ending Items</a></li> -->
+                                 <li><a href="https://contact.ebay.co.uk/ws/eBayISAPI.dll?FindAnswers&requested=houseoffocus" target="_blank">Contact Us</a></li>
+                              </ul>
+                           </div>
+                        </nav>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header>
+         <div class="promo-bg visible-desktop">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                     <div class="promo">
+                        <ul>
+                           <li><i class="fa fa-star"></i>TOP QUALITY PRODUCTS</li>
+                           <li><i class="fa fa-truck"></i>Free &amp; Fast Shipping</li>
+                           <li><i class="fa fa-user"></i>Best Customer Service</li>
+                           <li><i class="fa fa-thumbs-up"></i>SATISFACTION GUARANTEE</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="pst-clear"></div>
+         <div class="container">
+            <div class="listing-area">
+               <div class="gal-desc-part">
+                  <div class="row">
+                     <div class="col-md-3 col-sm-3 col-xs-12">
+                        <div id="LeftPanel">
+                           <table class="v4acpcont" width="100%" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <table class="v4acp" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                          <tbody>
+                                             <tr class="v4acp_head">
+                                                <td class="v4accent" bgcolor="#7EB30D"></td>
+                                                <td class="v4hspacer"></td>
+                                                <td class="v4title" bgcolor="#020202">
+                                                   <h2>Shop Categories</h2>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <table class="v4midBox v4nfc" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                          <tbody>
+                                             <tr class="v4acp_mid">
+                                                <td class="v4mid" bgcolor="#EEEEEE">
+                                                   <div class="lcat">
+                                                      <div class="ttl">Shop home</div>
+                                                      <ul class="lev1">
+                                                         <li><a href="https://www.ebay.co.uk/str/houseoffocus" target="_blank">All Listings</a><span class="cnt"> </span></li>
+                                                         <li><a href="https://www.ebay.co.uk/str/houseoffocus/Focus-Supplements/_i.html?_storecat=73425451013" target="_blank">Focus Supplements</a><span class="cnt"> </span></li>
+                                                         <li><a href="https://www.ebay.co.uk/str/houseoffocus/Health-Beauty/_i.html?_storecat=73425452013" target="">Health & Beauty</a><span class="cnt"> </span></li>
+                                                         <li><a href="https://www.ebay.co.uk/str/houseoffocus/Home-Garden/_i.html?_storecat=73425453013" target="">Home & Garden</a><span class="cnt"> </span></li>
+                                                         <li><a href="https://www.ebay.co.uk/str/houseoffocus/Sport/_i.html?_storecat=73425454013" target="">Sport</a><span class="cnt"> </span></li>
+                                                         <li><a href="https://www.ebay.co.uk/str/houseoffocus/The-Body-Shop/_i.html?_storecat=73425521013" target="">The Body Shop</a><span class="cnt"> </span></li>
+                                                         <li><a href="https://www.ebay.co.uk/str/houseoffocus/Other/_i.html?_storecat=1" target="">Other</a><span class="cnt"> </span></li>
+                                                      </ul>
+                                                      <div class="link"></div>
+                                                   </div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <br>
+                           <table style="margin-bottom: 7px !important;position: relative;top: -21px;" class="v4acpcont" width="100%" cellspacing="0" cellpadding="0">
+                              <tbody>
+                                 <tr>
+                                    <td>
+                                       <table class="v4acp" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                          <tbody>
+                                             <tr class="v4acp_head">
+                                                <td class="v4accent" bgcolor="#7EB30D"></td>
+                                                <td class="v4hspacer"></td>
+                                                <td class="v4title" bgcolor="#020202">
+                                                   <h2>Why Choose Us?</h2>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                       <table class="v4midBox v4nfc" width="100%" cellspacing="0" cellpadding="0" border="0">
+                                          <tbody>
+                                             <tr class="v4acp_mid">
+                                                <td class="v4mid" bgcolor="#EEEEEE">
+                                                   <div class="lcat">
+                                                      <div class="ttl">Shop home</div>
+                                                      <center><img style="width: 100%;" src="https://e-commerceguru.com/clients/bossa/img/shipping.png"></center>
+                                                      <div class="link"></div>
+                                                   </div>
+                                                </td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div class="col-md-9 col-sm-9 col-xs-12">
+                        <div class="row">
+                           <div class="v4title">
+                              <h2>[TAGBOT- ][TAGBOT TITLE =]</h2>
+                           </div>
+                           <br>
+                           <div class="col-md-12 col-sm-12 col-xs-12" style="border: 1px solid #dfdfdf;">
+                              <center><span id="mainimg"><img src="[TagBot?photo1?Photo no.1 =https://][TagBot?photo1]" alt=""> </span></center>
+                              <br>
+                              <div class="v4title">
+                                 <h2>Description</h2>
+                              </div>
+                              <div class="desc-container">
+                                 <div class="desc-box">
+                                    <div style="border: 1px solid #ddd; padding: 15px; margin-bottom: 15px;" class="text-regullar">
+                                       <p>[TagBot- ][TagBot Description=]</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <div class="pst-tab">
+                                       <input name="tabs" id="tabone" checked="checked" type="radio"> <label for="tabone">Shipping</label>
+                                       <div class="tab">
+                                          <div class="pst-page-title">Shipping</div>
+                                          <div class="pst-page-content">
+                                             <p>Sent with Royal Mail 1st Class Recorded posted same day before 1PM</p>
+                                          </div>
+                                       </div>
+                                       <input name="tabs" id="tabthree" type="radio"> <label for="tabthree">Payment</label>
+                                       <div class="tab">
+                                          <div class="pst-page-title">Payment</div>
+                                          <div class="pst-page-content">
+                                             <p>We accept PayPal verified for secure payment</p>
+                                          </div>
+                                       </div>
+                                       <input name="tabs" id="tabfour" type="radio"> <label for="tabfour">About</label>
+                                       <div class="tab">
+                                          <div class="pst-page-title">About Us</div>
+                                          <div class="pst-page-content">
+                                             <p>We are dedicated to sell you the best supplements money can buy from the UK. Settle for nothing less, our entire range has been tried & tested. Don't settle for less, try our products and see for yourself.</p>
+                                          </div>
+                                       </div>
+                                       <input name="tabs" id="tabtwo" type="radio"> <label for="tabtwo">Contact Us</label>
+                                       <div class="tab">
+                                          <div class="pst-page-title">Contact Us</div>
+                                          <div class="pst-page-content">
+                                             <p>Please <a href="https://contact.ebay.co.uk/ws/eBayISAPI.dll?FindAnswers&requested=houseoffocus"> message</a> us on eBay and we will get back to you within 24 Hours, usually within the same hour. We have extensive knowledge with our products and can tailor the right products for you for your needs.</p>
+                                             </p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="desc-container">
+                                 <div class="desc-box"></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="pst-clear"></div>
+         <div class="pst-footer">
+            <div class="f-promo-bg">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="f-promo">
+                           <div class="f-promo-box">
+                              <span class="icon-box"><img src="https://e-commerceguru.com/clients/bossa/img/promo-img-1.png" alt=""></span> <span class="f-promo-text"><span class="f-promo-text"> FAST SHIPPING<br></span></span>
+                              <p>on most items</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="f-promo">
+                           <div class="f-promo-box">
+                              <span class="icon-box"><img src="https://e-commerceguru.com/clients/bossa/img/promo-img-2.png" alt=""></span> <span class="f-promo-text"><span class="f-promo-text"> TRUSTED STORE<br></span></span>
+                              <p>satisfaction guarantee</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-4 col-sm-4 col-xs-12">
+                        <div class="f-promo">
+                           <div class="f-promo-box">
+                              <span class="icon-box"><img src="https://e-commerceguru.com/clients/bossa/img/promo-img-3.png" alt=""></span> <span class="f-promo-text"><span class="f-promo-text"> SECURE SHOPPING<br></span></span>
+                              <p>buy with confidence</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="pst-clear"></div>
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-4 col-sm-4 col-xs-12 visible-desktop">
+                     <div class="f-row-head">Quick Links</div>
+                     <div class="f-quick-link">
+                        <ul>
+                           <li><a href="https://www.ebay.co.uk/str/houseoffocus" target="_blank">- Store Home</a></li>
+                           <!-- <li><a href="#" target="_blank">- Add to Favorites</a></li> -->
+                           <li><a href="https://www.ebay.co.uk/fdbk/feedback_profile/house_of_focus?filter=feedback_page:All" target="_blank">- Feedback</a></li>
+                           <!-- <li><a href="#" target="_blank">About Us</a></li>
+                              <li><a href="#" target="_blank">Shipping</a></li>
+                              <li><a href="#" target="_blank">Payment</a></li>
+                              <li><a href="#" target="_blank">Returns</a></li> -->
+                           <li><a href="https://contact.ebay.co.uk/ws/eBayISAPI.dll?FindAnswers&requested=houseoffocus" target="_blank">- Contact Us</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12 visible-desktop">
+                     <div class="f-row-head">Payment Options</div>
+                     <div class="f-payment">
+                        <ul>
+                           <li>Secure Payments by</li>
+                        </ul>
+                        <img src="https://e-commerceguru.com/clients/bossa/img/paypal.png" class="img-responsive" alt="">
+                     </div>
+                  </div>
+                  <div class="col-md-4 col-sm-4 col-xs-12 visible-desktop">
+                     <div class="newslatter">
+                        <div class="f-row-head">Store Newsletter</div>
+                        <div class="pst-address">
+                           <p>Add Store to your Favorites and receive email newsletters about new items and special promotions!</p>
+                        </div>
+                        <div class="sign-up"><a href="https://www.ebay.co.uk/str/houseoffocus" target="_blank">Sign Up Now</a></div>
+                     </div>
+                  </div>
+               </div>
+               <div class="pst-clear"></div>
+               <div class="row">
+                  <div class="col-md-12 col-sm-12 col-xs-12">
+                     <div class="pst-copyright">Copyright © <span>House Of Focus</span></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
